@@ -3,18 +3,8 @@ body{
   overflow-x: hidden;
 }
 
-.header {
-  display: flex;
-  background: lightgray;
-  width: 100%;
-  height: 400px;
-  color: white;
-  padding-left: 20px;
-}
-
-.image {
-  border: none;
-  outline: none;
+li{
+  list-style-type: none;
 }
 
 .dots_custom {
@@ -46,8 +36,4 @@ body{
 
 .dots_custom li.slick-active button {
   background-color: gray;
-}
-
-.header_inner{
-  list-style-type: none;
 }

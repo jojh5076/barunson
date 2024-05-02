@@ -1,0 +1,12 @@
+<svg data-name="ico/16/question" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+    <path data-name="16*16" style="fill:none" d="M0 0h16v16H0z"/>
+    <g data-name="타원 69" transform="translate(1 1)" style="stroke:#a1a1a1;fill:none">
+        <circle cx="7" cy="7" r="7" style="stroke:none"/>
+        <circle cx="7" cy="7" r="6.5" style="fill:none"/>
+    </g>
+    <path data-name="Path 202" d="M-8271.594-10484.658h-.014a.5.5 0 0 1-.486-.514 1.905 1.905 0 0 1 .481-1.272l.007-.008c.152-.163.288-.3.408-.417.448-.446.555-.552.528-1.054-.038-.716-.9-.735-.916-.735h-.008a1.072 1.072 0 0 0-.794.285 1.028 1.028 0 0 0-.279.688.5.5 0 0 1-.492.508h-.008a.5.5 0 0 1-.5-.492 2.032 2.032 0 0 1 .566-1.4 2.039 2.039 0 0 1 1.5-.584h.025a1.85 1.85 0 0 1 1.9 1.683 2.038 2.038 0 0 1-.821 1.815c-.112.111-.24.238-.377.386a.89.89 0 0 0-.225.63.5.5 0 0 1-.495.481z" transform="translate(8279.666 10494.158)" style="fill:#a1a1a1"/>
+    <g data-name="타원 70" transform="translate(7.4 10)" style="fill:#a1a1a1;stroke:#a1a1a1">
+        <circle cx=".65" cy=".65" r=".65" style="stroke:none"/>
+        <circle cx=".65" cy=".65" r=".15" style="fill:none"/>
+    </g>
+</svg>
