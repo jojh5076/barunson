@@ -10,6 +10,7 @@
     background-color: #f7f7f7;
     display: flex;
     height: 100%;
+    color: gray;
 }
 
 li{
@@ -55,4 +56,8 @@ ul li{
 .tooltip:hover:before {
     opacity: 1;
     visibility: visible;
+}
+
+.mega_gnb{
+
 }

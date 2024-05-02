@@ -69,7 +69,7 @@ function Header() {
                                     <img src="/images/logo_barunson.png" alt="바른손카드"
                                          style={{marginTop: "32px"}} width="190" height="35"/>
                                 </a>
-                                <div className="mega_gnb">
+                                <div className={styles.mega_gnb}>
                                     <a href="https://www.barunsoncard.com/event/event_sample.asp?"
                                        title="무료샘플 바로가기">
                                         <strong>무료샘플 신청하세요</strong> <span>GO</span>
@@ -79,7 +79,7 @@ function Header() {
                                     <fieldset>
                                         <legend>통합검색</legend>
                                         <form name="topFrm" method="post" action="/product/list_all.asp"
-                                              onSubmit="return cardSearch_it();" accept-charset="utf-8"
+                                              onSubmit="return cardSearch_it();" acceptCharset="utf-8"
                                               style={{borderBottom: "1px solid #555"}}>
                                             <input type="text" id="search_value" name="search_value"
                                                    className="itext jtxtoff" title="카드코드를 입력해 주세요"
