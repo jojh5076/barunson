@@ -1,7 +1,40 @@
-import React from 'react';
+import React, {useRef, useState} from 'react';
 
 import styles from "./header.module.css";
 function Header() {
+
+    const [isMenuOpen, setIsMenuOpen] = useState(false);
+    const [isReviewOpen, setIsReviewOpen] = useState(false);
+    const [isBenefitsOpen, setIsBenefitsOpen] = useState(false);
+    const [isGuideOpen, setIsGuideOpen] = useState(false);
+
+    const headleMenuToogle = () => {
+        setIsMenuOpen(!isMenuOpen);
+    }
+    const handleReviewHover = () => {
+        setIsReviewOpen(true);
+    };
+
+    const handleReviewLeave = () => {
+        setIsReviewOpen(false);
+    };
+
+    const handleBenefitsHover = () => {
+        setIsBenefitsOpen(true);
+    };
+
+    const handleBenefitsLeave = () => {
+        setIsBenefitsOpen(false);
+    };
+
+    const handleGuideHover = () => {
+        setIsGuideOpen(true);
+    };
+
+    const handleGuideLeave = () => {
+        setIsGuideOpen(false);
+    };
+
     return (
         <div className={styles.header_box}>
             <div className={styles.header_top}>
@@ -61,7 +94,7 @@ function Header() {
                 </div>
             </div>
             <div className={styles.header_Menu}>
-                <div className="head">
+                <div className={styles.head}>
                     <div className="head_inner">
                         <div className="brand_navi">
                             <div className="logo_a">
@@ -78,9 +111,7 @@ function Header() {
                                 <div className="search_a">
                                     <fieldset>
                                         <legend>통합검색</legend>
-                                        <form name="topFrm" method="post" action="/product/list_all.asp"
-                                              onSubmit="return cardSearch_it();" acceptCharset="utf-8"
-                                              style={{borderBottom: "1px solid #555"}}>
+                                        <form name="topFrm" method="post" style={{borderBottom: "1px solid #555"}}>
                                             <input type="text" id="search_value" name="search_value"
                                                    className="itext jtxtoff" title="카드코드를 입력해 주세요"
                                                    placeholder="카드코드를 입력해 주세요" onKeyDown=""/>
@@ -97,157 +128,160 @@ function Header() {
                         </div>
                     </div>
                 </div>
-                <div className="gnb_a">
+                <div className={styles.gnb_a}>
                     <h2 className="blind"></h2>
-                    <div className="gnb">
-                        <ul className="menu">
+                    <div className={styles.gnb}>
+                        <ul className={styles.menu}>
                             <li>
-                                <button type="button" id="btn_roll">
-                                    <img
-                                        src="/icon/ico_12_menu.svg"
-                                        alt="전체보기" width="12" height="11" className="all_btn"/>
+                                <button type="button" id="btn_roll" onClick={headleMenuToogle}>
+                                    <img src="/icon/ico_12_menu.svg"
+                                         alt="전체보기" width="12" height="11" className={styles.all_btn}/>
                                 </button>
                             </li>
                             <li>
                                 <a className="btn_roll"
                                    href="https://www.barunsoncard.com/product/list_all.asp"
-                                   title="청첩장 바로가기">
-                                    청첩장
-                                </a>
+                                   title="청첩장 바로가기"> 청첩장 </a>
                             </li>
                             <li>
                                 <a className="btn_roll"
                                    href="https://www.barunsoncard.com/order/mcard/mcard_main_new.asp"
-                                   title="모바일청첩장 바로가기">
-                                    모바일청첩장
-                                </a>
+                                   title="모바일청첩장 바로가기"> 모바일청첩장 </a>
                             </li>
                             <li>
                                 <a className="btn_roll"
                                    href="https://www.barunsoncard.com/event/weddingfreecoupon.asp"
-                                   title="식전영상 바로가기">
-                                    식전영상
-                                </a>
+                                   title="식전영상 바로가기"> 식전영상 </a>
                             </li>
                             <li className="gnb_new" id="gnb_mo">
                                 <a className="btn_roll"
                                    href="https://www.barunsoncard.com/event/event_gift.asp"
-                                   title="답례품 바로가기">
-                                    답례품</a>
+                                   title="답례품 바로가기"> 답례품 </a>
                             </li>
                             <li>
                                 <a className="btn_roll"
                                    href="https://www.barunsoncard.com/product/list_thanks.asp"
-                                   title="감사장 바로가기">
-                                    감사장
-                                </a>
-                            </li>
-                            <li className="gnb_new" id="gnb_mo">
-                                <a className="btn_roll"
-                                   href="https://www.barunsoncard.com/event/event_gift.asp">
-                                    답례품
-                                </a>
+                                   title="감사장 바로가기"> 감사장 </a>
                             </li>
                             <li>
                                 <a className="btn_roll"
                                    href="https://www.barunsoncard.com/product/list_option_intro.asp"
-                                   title="부가상품 바로가기">
-                                    부가상품
-                                </a>
+                                   title="부가상품 바로가기"> 부가상품 </a>
                             </li>
                             <li className="etc_menu etc_menu_01">
                                 <a className="btn_roll"
                                    href="https://www.barunsoncard.com/product/list_best.asp"
-                                   title="베스트 바로가기">
-                                    베스트
-                                </a>
+                                   title="베스트 바로가기"> 베스트 </a>
                             </li>
                             <li className="etc_menu etc_menu_02">
                                 <a className="btn_roll"
                                    href="https://www.barunsoncard.com/product/list_new.asp"
-                                   title="신상 바로가기">
-                                    신상
-                                </a>
+                                   title="신상 바로가기"> 신상 </a>
                             </li>
                         </ul>
-                        <ul className="sgnb_b">
-                            <li className="dot type02">
+                        <ul className={styles.sgnb_b}>
+                            <li className={styles.dot_type} onMouseEnter={handleReviewHover}
+                                onMouseLeave={handleReviewLeave}>
                                 후기
-                                <div className="sgnb_b_box">
-                                    <ul className="sgnb_b_list_01">
-                                        <li><a
-                                            href="https://www.barunsoncard.com/event/event_sampleReviews.asp">샘플후기</a>
+                                {isReviewOpen &&(
+                                <div className={styles.sgnb_b_box}>
+                                    <ul className={styles.sgnb_b_list_01}>
+                                        <li>
+                                            <a href="https://www.barunsoncard.com/event/event_sampleReviews.asp"> 샘플후기 </a>
                                         </li>
-                                        <li><a href="https://www.barunsoncard.com/gnb/review_list.asp">구매후기</a>
+                                        <li>
+                                            <a href="https://www.barunsoncard.com/gnb/review_list.asp"> 구매후기 </a>
                                         </li>
                                     </ul>
                                 </div>
+                                )}
                             </li>
-                            <li>
+                            <li onMouseEnter={() => setIsBenefitsOpen(true)} onMouseLeave={() => setIsBenefitsOpen(false)}>
                                 혜택/이벤트
-                                <div className="sgnb_b_box">
-                                    <ul className="sgnb_b_list_02">
-                                        <li><a
-                                            href="https://www.barunsoncard.com/event/event_benefit.asp">혜택모아</a>
+                                <div className={styles.sgnb_b_box}>
+                                    <ul className={styles.sgnb_b_list_02}>
+                                        <li>
+                                            <a href="https://www.barunsoncard.com/event/event_benefit.asp">혜택모아</a>
                                         </li>
-                                        <li><a href="https://www.barunsoncard.com/event/event_main.asp">이벤트</a>
+
+                                        <li>
+                                            <a href="https://www.barunsoncard.com/event/event_main.asp">이벤트</a>
                                         </li>
-                                        <li><a href="https://www.barunsoncard.com/magazine/magazine_list.asp">웨딩
-                                            팁
-                                            <span>Tip</span></a></li>
+
+                                        <li>
+                                            <a href="https://www.barunsoncard.com/magazine/magazine_list.asp">웨딩 팁
+                                                <span>Tip</span></a>
+                                        </li>
                                     </ul>
                                 </div>
                             </li>
-                            <li>
+                            <li onMouseEnter={() => setIsGuideOpen(true)} onMouseLeave={() => setIsGuideOpen(false)}>
                                 이용가이드
-                                <div className="sgnb_b_box">
-                                    <ul className="sgnb_b_list_03">
-                                        <li><a href="https://www.barunsoncard.com/event/event_shopping.asp">청첩장
-                                            제작 설명서</a></li>
-                                        <li><a href="https://www.barunsoncard.com/gnb/greetings_list_v2.asp">청첩장
-                                            인사말</a></li>
-                                        <li><a href="https://www.barunsoncard.com/gnb/map_list.asp">예식장 약도</a>
+                                <div className={styles.sgnb_b_box}>
+                                    <ul className={styles.sgnb_b_list_03}>
+                                        <li>
+                                            <a href="https://www.barunsoncard.com/event/event_shopping.asp">청첩장
+                                                제작 설명서</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://www.barunsoncard.com/gnb/greetings_list_v2.asp">청첩장
+                                                인사말</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://www.barunsoncard.com/gnb/map_list.asp">예식장 약도</a>
                                         </li>
                                     </ul>
                                 </div>
                             </li>
                         </ul>
                     </div>
-                    <div className="all_a">
-                        <div className="all_menu">
-                            <div className="all_menu_in_left">
+                    <div className={`${styles.all_a} ${isMenuOpen ? styles.opened : ''}`}>
+                        <div className={styles.all_menu}>
+                            <div className={styles.all_menu_in_left}>
                                 <ul>
-                                    <li><span>카드</span></li>
-                                    <li><a href="https://www.barunsoncard.com/product/list_all.asp">청첩장</a></li>
-                                    <li><a
-                                        href="https://www.barunsoncard.com/order/mcard/mcard_main_new.asp">모바일청첩장<span
-                                        className="point">FREE</span></a></li>
-                                    <li><a href="https://www.barunsoncard.com/product/list_thanks.asp">감사장<span
-                                        className="point">15% 쿠폰</span></a>
+                                    <li>
+                                        <span>카드</span>
                                     </li>
-                                    <li><a
-                                        href="https://www.barunsoncard.com/product/list_invitation.asp">초대장</a>
+                                    <li>
+                                        <a href="https://www.barunsoncard.com/product/list_all.asp">청첩장
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.barunsoncard.com/order/mcard/mcard_main_new.asp">모바일청첩장
+                                            <span className="point">FREE</span></a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.barunsoncard.com/product/list_thanks.asp">감사장
+                                            <span className="point">15% 쿠폰</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.barunsoncard.com/product/list_invitation.asp">초대장
+                                        </a>
                                     </li>
                                 </ul>
                                 <ul>
-                                    <li><a href="https://www.barunsoncard.com/product/list_option_intro.asp">
-                                        <span className="primary">부가상품</span></a></li>
-                                    <li><a
-                                        href="https://www.barunsoncard.com/product/list_option.asp?gb=env">컬러봉투</a>
+                                    <li>
+                                        <a href="https://www.barunsoncard.com/product/list_option_intro.asp">
+                                            <span className="primary">부가상품</span></a>
                                     </li>
-                                    <li><a href="https://www.barunsoncard.com/event/special_env.asp">디자인봉투</a>
+                                    <li>
+                                        <a href="https://www.barunsoncard.com/product/list_option.asp?gb=env">컬러봉투</a>
                                     </li>
-                                    <li><a
-                                        href="https://www.barunsoncard.com/product/list_option.asp?gb=sealing">실링스티커</a>
+                                    <li>
+                                        <a href="https://www.barunsoncard.com/event/special_env.asp">디자인봉투</a>
                                     </li>
-                                    <li><a
-                                        href="https://www.barunsoncard.com/product/list_option.asp?gb=flower">프리저브드플라워</a>
+                                    <li>
+                                        <a href="https://www.barunsoncard.com/product/list_option.asp?gb=sealing">실링스티커</a>
                                     </li>
-                                    <li><a
-                                        href="https://www.barunsoncard.com/product/list_option.asp?gb=sticker">스티커</a>
+                                    <li>
+                                        <a href="https://www.barunsoncard.com/product/list_option.asp?gb=flower">프리저브드플라워</a>
                                     </li>
-                                    <li><a
-                                        href="https://www.barunsoncard.com/product/list_option.asp?gb=ribbon">리본</a>
+                                    <li>
+                                        <a href="https://www.barunsoncard.com/product/list_option.asp?gb=sticker">스티커</a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.barunsoncard.com/product/list_option.asp?gb=ribbon">리본</a>
                                     </li>
                                 </ul>
                                 <ul>
@@ -273,8 +307,7 @@ function Header() {
                                         </div>
                                     </li>
                                     <li>
-                                        <a href="https://www.barunsoncard.com/product/list_quick.asp">초특급제작
-                                            서비스</a>
+                                        <a href="https://www.barunsoncard.com/product/list_quick.asp">초특급제작 서비스</a>
                                         <button type="button" className="all_menu_tooltip">
                                             <img
                                                 src="/icon/ico_16_question.svg"
@@ -292,26 +325,15 @@ function Header() {
                                         </div>
                                     </li>
                                     <li>
-                                        <a href="https://www.barunsoncard.com/event/weddingfreecoupon.asp">
-                                            식전영상
-                                            <span className="point">
-                                                FREE
-                                            </span>
-                                        </a>
+                                        <a href="https://www.barunsoncard.com/event/weddingfreecoupon.asp">식전영상
+                                            <span className="point"> FREE </span></a>
                                     </li>
                                     <li>
-                                        <a href="https://www.barunsoncard.com/event/event_gift.asp">
-                                            답례품
-                                        </a>
-
+                                        <a href="https://www.barunsoncard.com/event/event_gift.asp">답례품</a>
                                     </li>
                                     <li>
-                                        <a href="https://www.barunsoncard.com/product/detail_photo.asp">
-                                            고급사진보정
-                                            <span className="point">
-                                                EVENT
-                                            </span>
-                                        </a>
+                                        <a href="https://www.barunsoncard.com/product/detail_photo.asp">고급사진보정
+                                            <span className="point"> EVENT </span></a>
                                     </li>
                                 </ul>
                             </div>

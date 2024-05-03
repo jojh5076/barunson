@@ -1,5 +1,6 @@
 import React from "react";
 import Slider from "react-slick";
+import styles from "./slider.module.css";
 
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -28,7 +29,7 @@ const SliderComponent = () => {
             <Slider {...settings}>
                 {imageData.map((image, index) => (
                     <div key={index} className="slide" style={{ backgroundColor: 'white', border: 'none' , outline: 'none' }}>
-                        <div className = "image">
+                        <div className = {styles.image}>
                             <img src = {image.url} alt = {image.alt} />
                         </div>
                         <div className="carousel_pagination">

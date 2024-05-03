@@ -1,15 +1,17 @@
 import './App.css';
 import  Header from './components/header';
 import  Slider  from './components/slider';
-import Main from './components/main';
+import Event from './components/event';
+import React from "react";
 
 function App() {
   return (
-    <div>
-        <Header></Header>
-        <Slider></Slider>
-        <Main></Main>
-    </div>
+      <div>
+          <Header></Header>
+          <Slider></Slider>
+          <h3 className="blind"></h3>
+          <Event></Event>
+      </div>
   );
 }
 
