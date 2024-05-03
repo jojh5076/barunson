@@ -1,8 +1,11 @@
+import React from "react";
 import './App.css';
+
 import  Header from './components/header';
 import  Slider  from './components/slider';
 import Event from './components/event';
-import React from "react";
+import Best from './components/best';
+
 
 function App() {
   return (
@@ -11,6 +14,7 @@ function App() {
           <Slider></Slider>
           <h3 className="blind"></h3>
           <Event></Event>
+          <Best></Best>
       </div>
   );
 }
