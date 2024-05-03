@@ -1,40 +1,18 @@
 import React, {useRef, useState} from 'react';
 
 import styles from "./header.module.css";
+import styled from "styled-components";
 function Header() {
 
     const [isMenuOpen, setIsMenuOpen] = useState(false);
-    const [isReviewOpen, setIsReviewOpen] = useState(false);
-    const [isBenefitsOpen, setIsBenefitsOpen] = useState(false);
-    const [isGuideOpen, setIsGuideOpen] = useState(false);
+    const [reviewHovering, setReviewHovering] = useState(false);
+    const [eventHovering, setEventHovering] = useState(false);
+    const [guideHovering, setGuideHovering] = useState(false);
+
 
     const headleMenuToogle = () => {
         setIsMenuOpen(!isMenuOpen);
     }
-    const handleReviewHover = () => {
-        setIsReviewOpen(true);
-    };
-
-    const handleReviewLeave = () => {
-        setIsReviewOpen(false);
-    };
-
-    const handleBenefitsHover = () => {
-        setIsBenefitsOpen(true);
-    };
-
-    const handleBenefitsLeave = () => {
-        setIsBenefitsOpen(false);
-    };
-
-    const handleGuideHover = () => {
-        setIsGuideOpen(true);
-    };
-
-    const handleGuideLeave = () => {
-        setIsGuideOpen(false);
-    };
-
     return (
         <div className={styles.header_box}>
             <div className={styles.header_top}>
@@ -180,10 +158,9 @@ function Header() {
                             </li>
                         </ul>
                         <ul className={styles.sgnb_b}>
-                            <li className={styles.dot_type} onMouseEnter={handleReviewHover}
-                                onMouseLeave={handleReviewLeave}>
-                                후기
-                                {isReviewOpen &&(
+                            <li className={styles.dot_type} onMouseOver={()=> setReviewHovering(true)}
+                                    onMouseOut={()=> setReviewHovering(false)}>
+                                후기{ reviewHovering &&(
                                 <div className={styles.sgnb_b_box}>
                                     <ul className={styles.sgnb_b_list_01}>
                                         <li>
@@ -194,10 +171,11 @@ function Header() {
                                         </li>
                                     </ul>
                                 </div>
-                                )}
-                            </li>
-                            <li onMouseEnter={() => setIsBenefitsOpen(true)} onMouseLeave={() => setIsBenefitsOpen(false)}>
-                                혜택/이벤트
+                                    )}
+                                </li>
+                            <li onMouseOver={()=> setEventHovering(true)}
+                                    onMouseOut={()=> setEventHovering(false)}>
+                                혜택/이벤트{eventHovering &&(
                                 <div className={styles.sgnb_b_box}>
                                     <ul className={styles.sgnb_b_list_02}>
                                         <li>
@@ -214,25 +192,26 @@ function Header() {
                                         </li>
                                     </ul>
                                 </div>
+                                    )}
                             </li>
-                            <li onMouseEnter={() => setIsGuideOpen(true)} onMouseLeave={() => setIsGuideOpen(false)}>
-                                이용가이드
-                                <div className={styles.sgnb_b_box}>
-                                    <ul className={styles.sgnb_b_list_03}>
-                                        <li>
-                                            <a href="https://www.barunsoncard.com/event/event_shopping.asp">청첩장
-                                                제작 설명서</a>
-                                        </li>
-                                        <li>
-                                            <a href="https://www.barunsoncard.com/gnb/greetings_list_v2.asp">청첩장
-                                                인사말</a>
-                                        </li>
-                                        <li>
-                                            <a href="https://www.barunsoncard.com/gnb/map_list.asp">예식장 약도</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </li>
+                            <li onMouseOver={() => setGuideHovering(true)}
+                                    onMouseOut={() => setGuideHovering(false)}>
+                                    이용가이드{guideHovering && (
+                                    <div className={styles.sgnb_b_box}>
+                                        <ul className={styles.sgnb_b_list_03}>
+                                            <li>
+                                                <a href="https://www.barunsoncard.com/event/event_shopping.asp">청첩장 제작 설명서</a>
+                                            </li>
+                                            <li>
+                                                <a href="https://www.barunsoncard.com/gnb/greetings_list_v2.asp">청첩장 인사말</a>
+                                            </li>
+                                            <li>
+                                                <a href="https://www.barunsoncard.com/gnb/map_list.asp">예식장 약도</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    )}
+                                </li>
                         </ul>
                     </div>
                     <div className={`${styles.all_a} ${isMenuOpen ? styles.opened : ''}`}>

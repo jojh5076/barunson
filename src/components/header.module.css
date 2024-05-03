@@ -62,10 +62,6 @@ ul li {
     display: none;
 }
 
-.sgnb_b_list_01, .sgnb_b_list_02, .sgnb_b_list_03 {
-    display: none;
-}
-
 .gnb {
     background-color: gray;
     display: flex;
@@ -98,6 +94,10 @@ ul li {
     height: 100%;
 }
 
-.menu li:hover .sgnb_b_box {
-    display: block;
+.sgnb_b_list_01{
+    position: absolute;
+    background: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
 }
