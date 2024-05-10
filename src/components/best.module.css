@@ -1,0 +1,84 @@
+/* best.module.css */
+
+/* 기본 스타일 */
+.best_list_a {
+    width: 100%;
+    background: linear-gradient(to top, #f4f7f9, #e8edf1);
+    padding-top: 20px; /* 선과 텍스트 사이 여백 조정 */
+}
+
+.best_list {
+    width: 1245px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.best_tit {
+    display: flex;
+    align-items: center;
+}
+
+.best_tit {
+    text-align: center;
+}
+
+.m_tit {
+    margin: 0;
+    font-size: 24px;
+    color: black;
+    text-align: left;
+    text-decoration: none; /* 밑줄 제거 */
+}
+
+.list_01 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.s_thum {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.s_thum img {
+    width: 100%;
+    height: auto;
+}
+
+.title_line {
+    flex-grow: 1;
+    height: 1px;
+    background-color: #333; /* 검은색 선 */
+    margin-left: 10px; /* 선과 텍스트 사이 여백 조정 */
+}
+
+.bestImg2{
+    display: none;
+}
+
+.best_list_btn{
+    text-align: center;
+}
+
+.best_list_btn :hover .bestImg2{
+    display: inline;
+}
+
+.best_list_btn  :hover .bestImg1{
+    display: none;
+}
+
+.goods_pricing{
+    padding-top: 30px;
+    text-align: center;
+    font-size: small;
+    color: gray;
+}
+
+.goods_bold{
+    color: black;
+}

@@ -5,7 +5,7 @@ import  Header from './components/header';
 import  Slider  from './components/slider';
 import Event from './components/event';
 import Best from './components/best';
-
+import Post from './components/post'
 
 function App() {
   return (
@@ -15,6 +15,7 @@ function App() {
           <h3 className="blind"></h3>
           <Event></Event>
           <Best></Best>
+          <Post></Post>
       </div>
   );
 }

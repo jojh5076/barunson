@@ -1,7 +1,6 @@
-import React, {useRef, useState} from 'react';
+import React, {useState} from 'react';
 
 import styles from "./header.module.css";
-import styled from "styled-components";
 function Header() {
 
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -74,7 +73,7 @@ function Header() {
             <div className={styles.header_Menu}>
                 <div className={styles.head}>
                     <div className="head_inner">
-                        <div className="brand_navi">
+                        <div className={styles.brand_navi}>
                             <div className="logo_a">
                                 <a href="https://www.barunsoncard.com/">
                                     <img src="/images/logo_barunson.png" alt="바른손카드"
