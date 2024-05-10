@@ -14,7 +14,7 @@ function post(){
 
                         <div className={styles.item}>
                             <div className={styles.img_box}>
-                                <a href="/event/curation_ranking.asp?acec=00089D" className={styles.ClickCount} style={{cursor: "pointer"}}><img src="https://file.barunsoncard.com/USER_DATA/1099/MD_26353_20240510100232155.jpg" alt="큐레이션 이미지" countseq="26353"/></a>
+                                <a href="/event/curation_ranking.asp?acec=00089D" className={styles.ClickCount} style={{cursor: "pointer"}}><img src="https://file.barunsoncard.com/USER_DATA/1099/MD_26353_20240510100232155.jpg" alt="큐레이션 이미지"/></a>
                             </div>
                             <div className={styles.txt_box}>
 
@@ -31,7 +31,7 @@ function post(){
 
                         <div className={styles.item}>
                             <div className={styles.img_box}>
-                                <a href="https://smore.im/quiz/UOjetvnlzN" className={styles.ClickCount} style={{cursor: "pointer"}}><img src="https://file.barunsoncard.com/USER_DATA/1099/MD_26454_20240503140239194.jpg" alt="큐레이션 이미지" countseq="26454"/></a>
+                                <a href="https://smore.im/quiz/UOjetvnlzN" className={styles.ClickCount} style={{cursor: "pointer"}}><img src="https://file.barunsoncard.com/USER_DATA/1099/MD_26454_20240503140239194.jpg" alt="큐레이션 이미지"/></a>
                             </div>
                             <div className={styles.txt_box}>
 
@@ -53,7 +53,7 @@ function post(){
                         <div className={styles.item}>
                             <div className={styles.thumb}>
                                 <div className={styles.img_box}>
-                                    <a href="/event/ribboncard.asp?acec=00089F" className={styles.ClickCount} style={{cursor: "pointer"}}><img src="https://file.barunsoncard.com/USER_DATA/1100/MD_26357_20240417154302738.jpg" alt="큐레이션 이미지" countseq="26357"/></a>
+                                    <a href="/event/ribboncard.asp?acec=00089F" className={styles.ClickCount} style={{cursor: "pointer"}}><img src="https://file.barunsoncard.com/USER_DATA/1100/MD_26357_20240417154302738.jpg" alt="큐레이션 이미지"/></a>
                                 </div>
                                 <div className={styles.txt_box}>
 
@@ -74,7 +74,7 @@ function post(){
                                     <li>
                                         <a href="/product/detail.asp?card_seq=39143" target="_blank">
                                             <div className={styles.img_box}>
-                                                <img src="https://file.barunsoncard.com/barunsoncard/BC3229/470.png" alt="" style="width:83px;height:83px"/>
+                                                <img src="https://file.barunsoncard.com/barunsoncard/BC3229/470.png" alt="" style={{width:"83px", height:"83px"}}/>
                                             </div>
                                             <div className={styles.txt_box}>
                                                 <p>로맨틱 리본</p>
@@ -86,7 +86,7 @@ function post(){
                                     <li>
                                         <a href="/product/detail.asp?card_seq=38895" target="_blank">
                                             <div className={styles.img_box}>
-                                                <img src="https://file.barunsoncard.com/barunsoncard/BC3212/470.png" alt="" style="width:83px;height:83px"/>
+                                                <img src="https://file.barunsoncard.com/barunsoncard/BC3212/470.png" alt="" style={{width:"83px", height:"83px"}}/>
                                             </div>
                                             <div className={styles.txt_box}>
                                                 <p>사랑과 고백</p>
@@ -98,7 +98,7 @@ function post(){
                                     <li>
                                         <a href="/product/detail.asp?card_seq=39120" target="_blank">
                                             <div className={styles.img_box}>
-                                                <img src="https://file.barunsoncard.com/barunsoncard/BC3221/470.png" alt="" style="width:83px;height:83px"/>
+                                                <img src="https://file.barunsoncard.com/barunsoncard/BC3221/470.png" alt="" style={{width:"83px", height:"83px"}}/>
                                             </div>
                                             <div className={styles.txt_box}>
                                                 <p>미니레이스</p>
@@ -115,7 +115,7 @@ function post(){
                         <div className={styles.item}>
                             <div className={styles.thumb}>
                                 <div className={styles.img_box}>
-                                    <a href="/event/event_celebrity.asp?acec=0008A0" className={styles.ClickCount} style={{cursor: "pointer"}}><img src="https://file.barunsoncard.com/USER_DATA/1100/MD_26358_20240423104214850.jpg" alt="큐레이션 이미지" countseq="26358"/></a>
+                                    <a href="/event/event_celebrity.asp?acec=0008A0" className={styles.ClickCount} style={{cursor: "pointer"}}><img src="https://file.barunsoncard.com/USER_DATA/1100/MD_26358_20240423104214850.jpg" alt="큐레이션 이미지"/></a>
                                 </div>
                                 <div className={styles.txt_box}>
 
@@ -136,7 +136,7 @@ function post(){
                                     <li>
                                         <a href="/product/detail.asp?card_seq=38689" target="_blank">
                                             <div className={styles.img_box}>
-                                                <img src="https://file.barunsoncard.com/barunsoncard/BC1607_C/470.png" alt="" style="width:83px;height:83px"/>
+                                                <img src="https://file.barunsoncard.com/barunsoncard/BC1607_C/470.png" alt="" style={{width:"83px", height:"83px"}}/>
                                             </div>
                                             <div className={styles.txt_box}>
                                                 <p>one and only</p>
@@ -148,7 +148,7 @@ function post(){
                                     <li>
                                         <a href="/product/detail.asp?card_seq=38209" target="_blank">
                                             <div className={styles.img_box}>
-                                                <img src="https://file.barunsoncard.com/barunsoncard/BH4009/470.png" alt="" style="width:83px;height:83px"/>
+                                                <img src="https://file.barunsoncard.com/barunsoncard/BH4009/470.png" alt="" style={{width:"83px", height:"83px"}}/>
                                             </div>
                                             <div className={styles.txt_box}>
                                                 <p>Propose 1</p>
@@ -160,7 +160,7 @@ function post(){
                                     <li>
                                         <a href="/product/detail.asp?card_seq=37139" target="_blank">
                                             <div className={styles.img_box}>
-                                                <img src="https://file.barunsoncard.com/barunsoncard/BH9611/470.png" alt="" style="width:83px;height:83px"/>
+                                                <img src="https://file.barunsoncard.com/barunsoncard/BH9611/470.png" alt="" style={{width:"83px", height:"83px"}}/>
                                             </div>
                                             <div className={styles.txt_box}>
                                                 <p>The milky way_Be...</p>
@@ -168,14 +168,10 @@ function post(){
                                             </div>
                                         </a>
                                     </li>
-
                                 </ul>
                             </div>
-
                         </div>
-
                     </div>
-
                 </div>
             </div>
         </div>
