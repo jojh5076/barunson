@@ -16,6 +16,7 @@
 .best_tit {
     display: flex;
     align-items: center;
+    text-decoration-line: none ;
 }
 
 .best_tit {
@@ -52,8 +53,8 @@
 .title_line {
     flex-grow: 1;
     height: 1px;
-    background-color: #333; /* 검은색 선 */
-    margin-left: 10px; /* 선과 텍스트 사이 여백 조정 */
+    background-color: #333;
+    margin-left: 10px;
 }
 
 .bestImg2{
@@ -81,4 +82,8 @@
 
 .goods_bold{
     color: black;
+}
+
+a{
+    text-decoration-line: none;
 }

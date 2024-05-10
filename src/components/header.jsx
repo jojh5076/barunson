@@ -33,7 +33,7 @@ function Header() {
                                     <img src="/images/barunsonmcard.svg" alt="바른손M카드" width="78" height="15"/>
                                 </a>
                             </li>
-                            <li className="thegift">
+                            <li className={styles.thegift}>
                                 <a href="https://www.barunsonthegift.com" target="_blank"
                                    className={styles.tooltip} rel="noopener noreferrer"
                                    data-hover="답례 선물 전문몰, 바른손더기프트">
@@ -53,17 +53,17 @@ function Header() {
                         <ul>
                             <li id="h_tool_e">
                                 <span>샘플장바구니</span>
-                                <span className="count_box">
+                                <span className={styles.count_box}>
                                         <span className={styles.sample_count}>0</span>
                                 </span>
                             </li>
                             <li>
                                 <span>마이페이지</span>
                             </li>
-                            <li className="top_join_wrap">
+                            <li className={styles.top_join_wrap}>
                                 <span>회원가입</span>
                             </li>
-                            <li className="top_login_wrap">
+                            <li className={styles.top_login_wrap}>
                                 <span>로그인</span>
                             </li>
                         </ul>
@@ -72,9 +72,9 @@ function Header() {
             </div>
             <div className={styles.header_Menu}>
                 <div className={styles.head}>
-                    <div className="head_inner">
+                    <div className={styles.head_inner}>
                         <div className={styles.brand_navi}>
-                            <div className="logo_a">
+                            <div className={styles.logo_a}>
                                 <a href="https://www.barunsoncard.com/">
                                     <img src="/images/logo_barunson.png" alt="바른손카드"
                                          style={{marginTop: "32px"}} width="190" height="35"/>
@@ -85,14 +85,14 @@ function Header() {
                                         <strong>무료샘플 신청하세요</strong> <span>GO</span>
                                     </a>
                                 </div>
-                                <div className="search_a">
+                                <div className={styles.search_a}>
                                     <fieldset>
                                         <legend>통합검색</legend>
                                         <form name="topFrm" method="post" style={{borderBottom: "1px solid #555"}}>
                                             <input type="text" id="search_value" name="search_value"
-                                                   className="itext jtxtoff" title="카드코드를 입력해 주세요"
+                                                   className={styles.itext_jtxtoff} title="카드코드를 입력해 주세요"
                                                    placeholder="카드코드를 입력해 주세요" onKeyDown=""/>
-                                            <a href="#" className="btn_search"
+                                            <a href="#" className={styles.btn_search}
                                                onClick={() => document.getElementsByName('topFrm')[0].submit()}>
                                                 <img
                                                     src="/icon/ico_16_search.svg"
@@ -106,7 +106,7 @@ function Header() {
                     </div>
                 </div>
                 <div className={styles.gnb_a}>
-                    <h2 className="blind"></h2>
+                    <h2 className={styles.blind}></h2>
                     <div className={styles.gnb}>
                         <ul className={styles.menu}>
                             <li>
@@ -116,42 +116,42 @@ function Header() {
                                 </button>
                             </li>
                             <li>
-                                <a className="btn_roll"
+                                <a className={styles.btn_roll}
                                    href="https://www.barunsoncard.com/product/list_all.asp"
                                    title="청첩장 바로가기"> 청첩장 </a>
                             </li>
                             <li>
-                                <a className="btn_roll"
+                                <a className={styles.btn_roll}
                                    href="https://www.barunsoncard.com/order/mcard/mcard_main_new.asp"
                                    title="모바일청첩장 바로가기"> 모바일청첩장 </a>
                             </li>
                             <li>
-                                <a className="btn_roll"
+                                <a className={styles.btn_roll}
                                    href="https://www.barunsoncard.com/event/weddingfreecoupon.asp"
                                    title="식전영상 바로가기"> 식전영상 </a>
                             </li>
-                            <li className="gnb_new" id="gnb_mo">
-                                <a className="btn_roll"
+                            <li className={styles.gnb_new} id="gnb_mo">
+                                <a className={styles.btn_roll}
                                    href="https://www.barunsoncard.com/event/event_gift.asp"
                                    title="답례품 바로가기"> 답례품 </a>
                             </li>
                             <li>
-                                <a className="btn_roll"
+                                <a className={styles.btn_roll}
                                    href="https://www.barunsoncard.com/product/list_thanks.asp"
                                    title="감사장 바로가기"> 감사장 </a>
                             </li>
                             <li>
-                                <a className="btn_roll"
+                                <a className={styles.btn_roll}
                                    href="https://www.barunsoncard.com/product/list_option_intro.asp"
                                    title="부가상품 바로가기"> 부가상품 </a>
                             </li>
-                            <li className="etc_menu etc_menu_01">
-                                <a className="btn_roll"
+                            <li className={styles.etc_menu_etc_menu_01}>
+                                <a className={styles.btn_roll}
                                    href="https://www.barunsoncard.com/product/list_best.asp"
                                    title="베스트 바로가기"> 베스트 </a>
                             </li>
-                            <li className="etc_menu etc_menu_02">
-                                <a className="btn_roll"
+                            <li className={styles.etc_menu_etc_menu_02}>
+                                <a className={styles.btn_roll}
                                    href="https://www.barunsoncard.com/product/list_new.asp"
                                    title="신상 바로가기"> 신상 </a>
                             </li>
@@ -226,11 +226,11 @@ function Header() {
                                     </li>
                                     <li>
                                         <a href="https://www.barunsoncard.com/order/mcard/mcard_main_new.asp">모바일청첩장
-                                            <span className="point">FREE</span></a>
+                                            <span className={styles.point}>FREE</span></a>
                                     </li>
                                     <li>
                                         <a href="https://www.barunsoncard.com/product/list_thanks.asp">감사장
-                                            <span className="point">15% 쿠폰</span>
+                                            <span className={styles.point}>15% 쿠폰</span>
                                         </a>
                                     </li>
                                     <li>
@@ -241,7 +241,7 @@ function Header() {
                                 <ul>
                                     <li>
                                         <a href="https://www.barunsoncard.com/product/list_option_intro.asp">
-                                            <span className="primary">부가상품</span></a>
+                                            <span className={styles.primary}>부가상품</span></a>
                                     </li>
                                     <li>
                                         <a href="https://www.barunsoncard.com/product/list_option.asp?gb=env">컬러봉투</a>
@@ -267,12 +267,12 @@ function Header() {
                                     <li>
                                         <a href="https://www.barunsoncard.com/product/product_list_pservice.asp">제본대행
                                             서비스</a>
-                                        <button type="button" className="all_menu_tooltip">
+                                        <button type="button" className={styles.all_menu_tooltip}>
                                             <img
                                                 src="/icon/ico_16_question.svg"
                                                 alt="물음표 아이콘"/>
                                         </button>
-                                        <div className="tooltip_box tooltip_box_1">
+                                        <div className={styles.tooltip_box_tooltip_box_1}>
                                             <dl>
                                                 <dt>제본대행 서비스</dt>
                                                 <dd>
@@ -286,12 +286,12 @@ function Header() {
                                     </li>
                                     <li>
                                         <a href="https://www.barunsoncard.com/product/list_quick.asp">초특급제작 서비스</a>
-                                        <button type="button" className="all_menu_tooltip">
+                                        <button type="button" className={styles.all_menu_tooltip}>
                                             <img
                                                 src="/icon/ico_16_question.svg"
                                                 alt="물음표 아이콘"/>
                                         </button>
-                                        <div className="tooltip_box tooltip_box_2">
+                                        <div className={styles.tooltip_box_tooltip_box_2}>
                                             <dl>
                                                 <dt>초특급제작 서비스</dt>
                                                 <dd>
@@ -304,14 +304,14 @@ function Header() {
                                     </li>
                                     <li>
                                         <a href="https://www.barunsoncard.com/event/weddingfreecoupon.asp">식전영상
-                                            <span className="point"> FREE </span></a>
+                                            <span className={styles.point}> FREE </span></a>
                                     </li>
                                     <li>
                                         <a href="https://www.barunsoncard.com/event/event_gift.asp">답례품</a>
                                     </li>
                                     <li>
                                         <a href="https://www.barunsoncard.com/product/detail_photo.asp">고급사진보정
-                                            <span className="point"> EVENT </span></a>
+                                            <span className={styles.point}> EVENT </span></a>
                                     </li>
                                 </ul>
                             </div>

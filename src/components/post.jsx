@@ -14,67 +14,58 @@ function post(){
 
                         <div className={styles.item}>
                             <div className={styles.img_box}>
-                                <a href="/event/curation_ranking.asp?acec=00089D" className={styles.ClickCount} style={{cursor: "pointer"}}><img src="https://file.barunsoncard.com/USER_DATA/1099/MD_26353_20240510100232155.jpg" alt="큐레이션 이미지"/></a>
+                                <a href="https://www.barunsoncard.com/event/curation_ranking.asp?acec=00089D"  style={{cursor: "pointer"}}>
+                                    <img src="https://file.barunsoncard.com/USER_DATA/1099/MD_26353_20240510100232155.jpg" alt="큐레이션 이미지"/></a>
                             </div>
                             <div className={styles.txt_box}>
-
                                 <h3>
-                                    주목! 신랑신부님의<br>Real Review</br>
+                                    주목! 신랑신부님의<br />Real Review
                                 </h3>
-
                                 <p>
                                     리뷰가 증명한  Best of Best 청첩장은 무엇일까요?
                                 </p>
-
                             </div>
                         </div>
 
                         <div className={styles.item}>
                             <div className={styles.img_box}>
-                                <a href="https://smore.im/quiz/UOjetvnlzN" className={styles.ClickCount} style={{cursor: "pointer"}}><img src="https://file.barunsoncard.com/USER_DATA/1099/MD_26454_20240503140239194.jpg" alt="큐레이션 이미지"/></a>
+                                <a href="https://smore.im/quiz/UOjetvnlzN"  style={{cursor: "pointer"}}>
+                                    <img src="https://file.barunsoncard.com/USER_DATA/1099/MD_26454_20240503140239194.jpg" alt="큐레이션 이미지"/></a>
                             </div>
                             <div className={styles.txt_box}>
-
                                 <h3>
                                     취향으로 고르는 청첩장
                                 </h3>
-
                                 <p>
                                     나를 닮은 청첩장을 찾아보세요
                                 </p>
-
                             </div>
                         </div>
-
                     </div>
-
                     <div className={styles.sub_case}>
 
                         <div className={styles.item}>
                             <div className={styles.thumb}>
                                 <div className={styles.img_box}>
-                                    <a href="/event/ribboncard.asp?acec=00089F" className={styles.ClickCount} style={{cursor: "pointer"}}><img src="https://file.barunsoncard.com/USER_DATA/1100/MD_26357_20240417154302738.jpg" alt="큐레이션 이미지"/></a>
+                                    <a href="https://www.barunsoncard.com/event/ribboncard.asp?acec=00089F" style={{cursor: "pointer"}}>
+                                        <img src="https://file.barunsoncard.com/USER_DATA/1100/MD_26357_20240417154302738.jpg" alt="큐레이션 이미지"/></a>
                                 </div>
                                 <div className={styles.txt_box}>
-
                                     <h3>
-                                        두 분의 새로운 시작<br>바른손카드와 함께해 주세요.</br>
+                                        두 분의 새로운 시작<br />바른손카드와 함께해 주세요.
                                     </h3>
-
                                     <p>
-                                        꾸준히 사랑받는 리본 청첩장 소개와 <br>할인 혜택까지 만나보세요.</br>
+                                        꾸준히 사랑받는 리본 청첩장 소개와 <br />할인 혜택까지 만나보세요.
                                     </p>
-
                                 </div>
                             </div>
 
                             <div className={styles.list}>
                                 <ul>
-
                                     <li>
-                                        <a href="/product/detail.asp?card_seq=39143" target="_blank">
+                                        <a href="https://www.barunsoncard.com/product/detail.asp?card_seq=39143" target="_blank">
                                             <div className={styles.img_box}>
-                                                <img src="https://file.barunsoncard.com/barunsoncard/BC3229/470.png" alt="" style={{width:"83px", height:"83px"}}/>
+                                                <img src="/post/470.png" alt="" style={{width:"83px", height:"83px"}}/>
                                             </div>
                                             <div className={styles.txt_box}>
                                                 <p>로맨틱 리본</p>
@@ -84,9 +75,9 @@ function post(){
                                     </li>
 
                                     <li>
-                                        <a href="/product/detail.asp?card_seq=38895" target="_blank">
+                                        <a href="https://www.barunsoncard.com/product/detail.asp?card_seq=38895" target="_blank">
                                             <div className={styles.img_box}>
-                                                <img src="https://file.barunsoncard.com/barunsoncard/BC3212/470.png" alt="" style={{width:"83px", height:"83px"}}/>
+                                                <img src="/post/470 (1).png" alt="" style={{width:"83px", height:"83px"}}/>
                                             </div>
                                             <div className={styles.txt_box}>
                                                 <p>사랑과 고백</p>
@@ -96,9 +87,9 @@ function post(){
                                     </li>
 
                                     <li>
-                                        <a href="/product/detail.asp?card_seq=39120" target="_blank">
+                                        <a href="https://www.barunsoncard.com/product/detail.asp?card_seq=39120" target="_blank">
                                             <div className={styles.img_box}>
-                                                <img src="https://file.barunsoncard.com/barunsoncard/BC3221/470.png" alt="" style={{width:"83px", height:"83px"}}/>
+                                                <img src="/post/470 (2).png" alt="" style={{width:"83px", height:"83px"}}/>
                                             </div>
                                             <div className={styles.txt_box}>
                                                 <p>미니레이스</p>
@@ -115,16 +106,17 @@ function post(){
                         <div className={styles.item}>
                             <div className={styles.thumb}>
                                 <div className={styles.img_box}>
-                                    <a href="/event/event_celebrity.asp?acec=0008A0" className={styles.ClickCount} style={{cursor: "pointer"}}><img src="https://file.barunsoncard.com/USER_DATA/1100/MD_26358_20240423104214850.jpg" alt="큐레이션 이미지"/></a>
+                                    <a href="https://www.barunsoncard.com/event/event_celebrity.asp?acec=0008A0"  style={{cursor: "pointer"}}>
+                                        <img src="https://file.barunsoncard.com/USER_DATA/1100/MD_26358_20240423104214850.jpg" alt="큐레이션 이미지"/></a>
                                 </div>
                                 <div className={styles.txt_box}>
 
                                     <h3>
-                                        단 한 번뿐인 빛나는 그 날<br>셀럽이 선택한 청첩장</br>
+                                        단 한 번뿐인 빛나는 그 날<br />셀럽이 선택한 청첩장
                                     </h3>
 
                                     <p>
-                                        서로가 서로에게 가장 빛나는 순간<br>한 번 뿐인 웨딩을 특별하게 전해보세요.</br>
+                                        서로가 서로에게 가장 빛나는 순간<br />한 번 뿐인 웨딩을 특별하게 전해보세요.
                                     </p>
 
                                 </div>
@@ -134,9 +126,9 @@ function post(){
                                 <ul>
 
                                     <li>
-                                        <a href="/product/detail.asp?card_seq=38689" target="_blank">
+                                        <a href="https://www.barunsoncard.com/product/detail.asp?card_seq=38689" target="_blank">
                                             <div className={styles.img_box}>
-                                                <img src="https://file.barunsoncard.com/barunsoncard/BC1607_C/470.png" alt="" style={{width:"83px", height:"83px"}}/>
+                                                <img src="/post/470 (3).png" alt="" style={{width:"83px", height:"83px"}}/>
                                             </div>
                                             <div className={styles.txt_box}>
                                                 <p>one and only</p>
@@ -146,9 +138,9 @@ function post(){
                                     </li>
 
                                     <li>
-                                        <a href="/product/detail.asp?card_seq=38209" target="_blank">
+                                        <a href="https://www.barunsoncard.com/product/detail.asp?card_seq=38209" target="_blank">
                                             <div className={styles.img_box}>
-                                                <img src="https://file.barunsoncard.com/barunsoncard/BH4009/470.png" alt="" style={{width:"83px", height:"83px"}}/>
+                                                <img src="/post/470 (4).png" alt="" style={{width:"83px", height:"83px"}}/>
                                             </div>
                                             <div className={styles.txt_box}>
                                                 <p>Propose 1</p>
@@ -158,9 +150,9 @@ function post(){
                                     </li>
 
                                     <li>
-                                        <a href="/product/detail.asp?card_seq=37139" target="_blank">
+                                        <a href="https://www.barunsoncard.com/product/detail.asp?card_seq=37139" target="_blank">
                                             <div className={styles.img_box}>
-                                                <img src="https://file.barunsoncard.com/barunsoncard/BH9611/470.png" alt="" style={{width:"83px", height:"83px"}}/>
+                                                <img src="/post/470 (5).png" alt="" style={{width:"83px", height:"83px"}}/>
                                             </div>
                                             <div className={styles.txt_box}>
                                                 <p>The milky way_Be...</p>
