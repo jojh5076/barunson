@@ -1,0 +1,41 @@
+.mds_a {
+    width: 100%;
+    background-color: #fdf8eb;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.mds {
+    padding-top: 10px;
+    margin-left: 18%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.mds li {
+    width: calc(33.333% - 20px);
+    margin: 20px;
+}
+
+.lazyload {
+    float: left;
+    width: 436px;
+    height: 130px;
+}
+.lazyload1 {
+    float: left;
+    width: 641px;
+    height: 419px;
+}
+.lazyload2 {
+    margin-top: -314px;
+    float: left;
+    width: 436px;
+    height: 656px;
+}
+.lazyload3 {
+    float: left;
+    width: 641px;
+    height: 419px;
+}
