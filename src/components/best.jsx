@@ -8,7 +8,6 @@ function Best() {
                 <div className={styles.best_tit}>
                     <a href="https://www.barunsoncard.com/product/list_best.asp">
                         <h3 className={styles.m_tit}>베스트</h3>
-                        <div className={styles.title_line}></div>
                     </a>
                 </div>
                 <ul className={styles.list_01}>

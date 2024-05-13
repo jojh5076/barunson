@@ -23,86 +23,104 @@
 .main_case {
     flex: 2;
     margin-right: 15px;
+    float: left;
+    padding-right: 20px;
 }
 
 .sub_case {
     flex: 1;
     margin-left: 15px;
+    float: left;
 }
 
 .item {
     margin-bottom: 20px;
+    position: relative;
 }
 
-.txt_box {
-    padding: 15px;
+.item .thumb .img_box img {
+    width: 286px;
+    height: 361px;
+    object-fit: cover;
 }
 
-.txt_box h3 {
+.item .txt_box {
+    padding: 20px;
+    float: left;
+}
+
+.item .txt_box h3 {
     margin-bottom: 10px;
     font-size: 18px;
     font-weight: bold;
     color: #333333;
 }
 
-.txt_box p {
+.item .txt_box p {
     font-size: 14px;
     line-height: 1.5;
-    margin-top: 5px;
-    color: #666666;
+}
+
+.list {
+    margin-top: 15px;
 }
 
 .list ul {
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: wrap;
     list-style-type: none;
     padding: 0;
+    flex-direction: column;
 }
 
 .list ul li {
     width: 30%;
     margin-bottom: 20px;
     border-top: 1px solid #D9D9D9;
-    padding: 12px 0px;
+    padding: 12px;
 }
 
 .list ul li a {
-    display: block;
     text-decoration: none;
     color: #333333;
+    display: flex;
+    align-items: center;
 }
 
 .list ul li .txt_box {
     padding: 10px;
 }
 
-.curation_main .contents {
+.list ul li .txt_box p {
+    margin-top: 5px;
+    font-size: 12px;
+    color: #666666;
+}
+
+.contents {
     width: 1100px;
     margin: 0 auto;
 }
 
-.curation_main .contents .main_case .item {
-    position: relative;
-}
-
-.curation_main .contents .main_case .item .txt_box {
+.main_case .item .txt_box {
     position: absolute;
     left: 25px;
     bottom: 26px;
     padding-right: 25px;
 }
 
-.curation_main .contents .main_case .item .txt_box h3 {
+.main_case .item .txt_box h3 {
     color: #fff;
     font-size: 20px;
     font-weight: 600;
-    margin-bottom: 5.5px;
+    margin-bottom: 5px;
     line-height: 26px;
     max-height: 52px;
     overflow: hidden;
 }
 
-.curation_main .contents .main_case .item .txt_box p {
+.main_case .item .txt_box p {
     color: #fff;
     font-size: 14px;
     font-weight: 400;
@@ -111,6 +129,8 @@
     overflow: hidden;
 }
 
-.curation_main .contents .sub_case .item .list ul li:first-child {
-    border-top: none;
+.main_case .item .img_box img {
+    width: 448px;
+    height: 404px;
+    object-fit: cover;
 }
