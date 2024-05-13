@@ -9,7 +9,6 @@ function post(){
                     <h3 className={styles.m_tit}>포스트잇</h3>
                 </div>
                 <div className={styles.contents}>
-
                     <div className={styles.main_case}>
 
                         <div className={styles.item}>

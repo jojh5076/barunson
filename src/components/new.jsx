@@ -13,7 +13,7 @@ export  function New() {
                 <ul className={styles.list_01}>
                     <li className={styles.s_thum}>
                         <a className={styles.showInfoBtn_ClickCount_gtm1}>
-                            <img className={styles.lazyload} src="/new/303.png"/>
+                            <img className={styles.lazyload} src="/new/303.png" alt=""/>
                         </a>
                         <div className={styles.goods_pricing}>
                             <span className={styles.goods_bold}>피어나는 계절 </span>
@@ -24,7 +24,7 @@ export  function New() {
 
                     <li className={styles.s_thum}>
                         <a className={styles.showInfoBtn_ClickCount_gtm2}>
-                            <img className={styles.lazyload} src="/new/303 (1).png"/>
+                            <img className={styles.lazyload} src="/new/303 (1).png" alt=""/>
                         </a>
                         <div className={styles.goods_pricing}>
                             <span className={styles.goods_bold}>고백하는 날 </span>
@@ -36,7 +36,7 @@ export  function New() {
 
                     <li className={styles.s_thum}>
                         <a className={styles.showInfoBtn_ClickCount_gtm3}>
-                            <img className={styles.lazyload} src="/new/303 (2).png"/>
+                            <img className={styles.lazyload} src="/new/303 (2).png" alt=""/>
                         </a>
                         <div className={styles.goods_pricing}>
                             <span className={styles.goods_bold}>White Dress </span>
@@ -47,7 +47,7 @@ export  function New() {
 
                     <li className={styles.s_thum}>
                         <a className={styles.showInfoBtn_ClickCount_gtm4}>
-                            <img className={styles.lazyload} src="/new/303 (3).png"/>
+                            <img className={styles.lazyload} src="/new/303 (3).png" alt=""/>
                         </a>
                         <div className={styles.goods_pricing}>
                             <span className={styles.goods_bold}>로즈골드 </span>
@@ -58,7 +58,7 @@ export  function New() {
 
                     <li className={styles.s_thum}>
                         <a className={styles.showInfoBtn_ClickCount_gtm5}>
-                            <img className={styles.lazyload} src="/new/303 (4).png"/>
+                            <img className={styles.lazyload} src="/new/303 (4).png" alt=""/>
                             </a>
                         <div className={styles.goods_pricing}>
                             <span className={styles.goods_bold}>꽃길로맨스 </span>
@@ -69,7 +69,7 @@ export  function New() {
 
                     <li className={styles.s_thum}>
                         <a className={styles.showInfoBtn_ClickCount_gtm6}>
-                            <img className={styles.lazyload} src="/new/303 (5).png"/>
+                            <img className={styles.lazyload} src="/new/303 (5).png" alt=""/>
                         </a>
                         <div className={styles.goods_pricing}>
                             <span className={styles.goods_bold}>DEAR. JANUARY </span>
@@ -80,7 +80,7 @@ export  function New() {
 
                     <li className={styles.s_thum}>
                         <a className={styles.showInfoBtn_ClickCount_gtm7}>
-                            <img className={styles.lazyload} src="/new/303 (6).png"/>
+                            <img className={styles.lazyload} src="/new/303 (6).png" alt=""/>
                         </a>
                         <div className={styles.goods_pricing}>
                             <span className={styles.goods_bold}>모던 블루 </span>
@@ -91,7 +91,7 @@ export  function New() {
 
                     <li className={styles.s_thum}>
                         <a className={styles.showInfoBtn_ClickCount_gtm8}>
-                            <img className={styles.lazyload} src="/new/303 (7).png"/>
+                            <img className={styles.lazyload} src="/new/303 (7).png" alt=""/>
                         </a>
                         <div className={styles.goods_pricing}>
                             <span className={styles.goods_bold}>골드라인 (Gold) </span>
@@ -103,7 +103,7 @@ export  function New() {
                 <ul className={styles.list_02}>
                 <li className={styles.s_thum}>
                     <a className={styles.showInfoBtn_ClickCount_gtm9}>
-                        <img className={styles.lazyload} src="/new/303 (8).png"/>
+                        <img className={styles.lazyload} src="/new/303 (8).png" alt=""/>
                     </a>
                     <div className={styles.goods_pricing}>
                         <span className={styles.goods_bold}>The Classic </span>
@@ -114,7 +114,7 @@ export  function New() {
 
                 <li className={styles.s_thum}>
                     <a className={styles.showInfoBtn_ClickCount_gtm10}>
-                        <img className={styles.lazyload} src="/new/303 (9).png"/>
+                        <img className={styles.lazyload} src="/new/303 (9).png" alt=""/>
                     </a>
                     <div className={styles.goods_pricing}>
                         <span className={styles.goods_bold}>꽃의 노래 </span>
@@ -125,7 +125,7 @@ export  function New() {
 
                 <li className={styles.s_thum}>
                     <a className={styles.showInfoBtn_ClickCount_gtm11}>
-                        <img className={styles.lazyload} src="/new/303 (10).png"/>
+                        <img className={styles.lazyload} src="/new/303 (10).png" alt=""/>
                     </a>
                     <div className={styles.goods_pricing}>
                         <span className={styles.goods_bold}>행복한 순간 </span>
@@ -136,7 +136,7 @@ export  function New() {
 
                 <li className={styles.s_thum}>
                     <a className={styles.showInfoBtn_ClickCount_gtm12}>
-                        <img className={styles.lazyload} src="/new/303 (11).png"/>
+                        <img className={styles.lazyload} src="/new/303 (11).png" alt=""/>
                     </a>
                     <div className={styles.goods_pricing}>
                         <span className={styles.goods_bold}>사랑의 맹세 </span>
@@ -147,7 +147,7 @@ export  function New() {
 
                 <li className={styles.s_thum}>
                     <a className={styles.showInfoBtn_ClickCount_gtm13}>
-                        <img className={styles.lazyload} src="/new/303 (12).png"/>
+                        <img className={styles.lazyload} src="/new/303 (12).png" alt=""/>
                     </a>
                     <div className={styles.goods_pricing}>
                         <span className={styles.goods_bold}>함께인 계절 </span>
@@ -158,7 +158,7 @@ export  function New() {
 
                 <li className={styles.s_thum}>
                     <a className={styles.showInfoBtn_ClickCount_gtm14}>
-                        <img className={styles.lazyload} src="/new/303 (13).png"/>
+                        <img className={styles.lazyload} src="/new/303 (13).png" alt=""/>
                     </a>
                     <div className={styles.goods_pricing}>
                         <span className={styles.goods_bold}>Our Moment </span>
@@ -169,7 +169,7 @@ export  function New() {
 
                 <li className={styles.s_thum}>
                     <a className={styles.showInfoBtn_ClickCount_gtm15}>
-                        <img className={styles.lazyload} src="/new/303 (14).png"/>
+                        <img className={styles.lazyload} src="/new/303 (14).png" alt=""/>
                     </a>
                     <div className={styles.goods_pricing}>
                         <span className={styles.goods_bold}>설렘 가득히 </span>
@@ -180,7 +180,7 @@ export  function New() {
 
                 <li className={styles.s_thum}>
                     <a className={styles.showInfoBtn_ClickCount_gtm16}>
-                        <img className={styles.lazyload} src="/new/303 (15).png"/>
+                        <img className={styles.lazyload} src="/new/303 (15).png" alt=""/>
                     </a>
                     <div className={styles.goods_pricing}>
                         <span className={styles.goods_bold}>웨딩파티 </span>
@@ -193,8 +193,8 @@ export  function New() {
 
             <div className={styles.new_list_btn}>
                 <a className={styles.btn_roll}>
-                    <img className={styles.lazyload} src="/new/btn_add_blue_off.png"/>
-                        <img className={styles.over} src="/new/btn_add_blue_on.png"/>
+                    <img className={styles.lazyload} src="/new/btn_add_blue_off.png" alt=""/>
+                        <img className={styles.over} src="/new/btn_add_blue_on.png" alt=""/>
                 </a>
             </div>
         </div>
