@@ -25,6 +25,12 @@ function App() {
           <Best></Best>
           <Post></Post>
           <Stationery></Stationery>
+          <div className="thanks" style={{backgroundImage: `url('/thanks/thanks_ban_background_210909.jpg')`}}>
+              <a href={'https://www.barunsoncard.com/product/list_thanks.asp'}>
+                  <img src={'/thanks/thanks_ban_1911.png'} alt=''/>
+              </a>
+          </div>
+          <New></New>
       </div>
   );
 }

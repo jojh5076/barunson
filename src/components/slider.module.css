@@ -1,3 +1,16 @@
-.image{
-    background-color: black;
+.carousel_pagination {
+    display: flex;
+    justify-content: flex-end; /* 요소를 오른쪽으로 정렬합니다 */
+    margin-right: 20px; /* 오른쪽 여백 추가 */
 }
+
+.carousel_pagination {
+    position: absolute;
+    bottom: 20px; /* 아래 여백 조정 */
+    right: 20px; /* 오른쪽 여백 조정 */
+}
+ .dots_custom{
+     position: absolute;
+     bottom: 20px; /* 아래 여백 조정 */
+     right: 20px; /* 오른쪽 여백 조정 */
+ }
