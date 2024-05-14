@@ -23,22 +23,21 @@ const SliderComponent = () => {
         arrows: false,
     };
 
-
     return (
-        <div className="slider">
+        <div className={styles.slider}>
             <Slider {...settings}>
                 {imageData.map((image, index) => (
-                    <div key={index} className="slide" style={{ backgroundColor: 'white', border: 'none' , outline: 'none' }}>
-                        <div className = {styles.image}>
-                            <img src = {image.url} alt = {image.alt} />
-                        </div>
-                        <div className="carousel_pagination">
-                            <div className="carousel_circle"></div>
-                            <div className="carousel_circle"></div>
-                            <div className="carousel_circle"></div>
-                            <div className="carousel_circle"></div>
-                            <div className="carousel_circle"></div>
-                            <div className="carousel_circle"></div>
+                    <div key={index} className={styles.slide} style={{ backgroundColor: 'white', border: 'none', outline: 'none', position: 'relative' }}>
+                        <div className={styles.image}>
+                            <img src={image.url} alt={image.alt} />
+                            <div className={styles.carousel_pagination}>
+                                <div className={styles.carousel_circle}></div>
+                                <div className={styles.carousel_circle}></div>
+                                <div className={styles.carousel_circle}></div>
+                                <div className={styles.carousel_circle}></div>
+                                <div className={styles.carousel_circle}></div>
+                                <div className={styles.carousel_circle}></div>
+                            </div>
                         </div>
                     </div>
                 ))}

@@ -5,7 +5,7 @@ export function Stationery() {
         <div className={styles.mds_a}>
             <ul className={styles.mds}>
                 <li>
-                    <img src="https://static.barunsoncard.com/barunsoncard/main/pc/md_pick_title.png"
+                    <img src="/stationery/md_pick_title.png"
                          className={styles.lazyload} alt=""/>
                 </li>
                 <li>

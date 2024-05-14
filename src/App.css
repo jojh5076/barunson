@@ -37,3 +37,13 @@ li{
 .dots_custom li.slick-active button {
   background-color: gray;
 }
+
+.thanks{
+  text-align: center;
+  align-items: center;
+  height: 180px;
+}
+
+.thanks img{
+  margin-top: 12px;
+}

@@ -6,11 +6,16 @@
     display: flex;
     align-items: center;
     width: 100%;
-    margin: 70px 0 90px;
+    margin: 20px 0 40px;
 }
 
 .event p {
     display: flex;
     color: black;
     float: left;
+    margin-left: 60px;
+    margin-top: 10px;
+}
+.event img{
+    margin-left: -90px;
 }
