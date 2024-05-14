@@ -1,9 +1,38 @@
-.new-list_a{
-    text-align: center;
+.new_list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
-.m_tit{
-    color: red;
+
+.new_list li {
+    width: calc(50% - 10px); /* 2개의 항목이 가로로 배열되므로 50%로 설정하고 간격을 제거합니다. */
+    margin-bottom: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
-.goods_bold{
-    color: red;
+
+.new_list li img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 10px 10px 0 0;
+}
+
+.new_list li .goods_pricing {
+    padding: 10px;
+}
+
+.new_list li .goods_pricing span {
+    display: block;
+    font-weight: bold;
+}
+
+.new_list li .goods_pricing span:first-child {
+    color: #333;
+}
+
+.new_list li .goods_pricing span:last-child {
+    color: #666;
 }
