@@ -1,0 +1,75 @@
+.new_list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+}
+
+.s_thum {
+    margin-right: 50px;
+    flex-wrap: wrap;
+}
+
+.list_01,
+.list_02 {
+    margin-left: 250px;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.m_tit {
+    color: #333333;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.list_01 .lazyload,
+.list_02 .lazyload {
+    background-color: #f0f0f0;
+    margin-left: -20px;
+}
+
+.goods_bold,
+.goods_pricing {
+    text-align: center;
+}
+
+.new_tit {
+    margin-left: 47%;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.on_over {
+    display: none;
+}
+
+.new_list_btn {
+    text-align: center;
+    background-color: white;
+}
+
+.new_list_btn button {
+    border: none;
+    position: relative; /* 상대 위치 지정 */
+}
+
+.new_list_btn button .on_over,
+.new_list_btn button .off_over {
+    position: absolute; /* 절대 위치 지정 */
+    top: 0;
+    left: 0;
+    display: inline; /* 기본값은 inline으로 설정 */
+}
+
+.new_list_btn button .off_over {
+    display: inline; /* 초기에는 off_over 이미지가 보이지 않도록 설정 */
+}
+
+.new_list_btn button:hover .on_over {
+    display: none; /* on_over 이미지가 보이지 않도록 설정 */
+}
+
+.new_list_btn button:hover .off_over {
+    display: inline; /* off_over 이미지가 보이도록 설정 */
+}
