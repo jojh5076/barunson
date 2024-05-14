@@ -1,5 +1,5 @@
 import React from "react";
-import styles from './new.moudule.css';
+import styles from './new.module.css';
         
 export function New() {
     return(

@@ -33,6 +33,7 @@ function App() {
           <New/>
           <Slider2/>
           <Suggest/>
+          <Service/>
       </div>
   );
 }

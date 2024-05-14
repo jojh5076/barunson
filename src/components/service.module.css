@@ -1,0 +1,19 @@
+.service_list img{
+    padding: 0;
+    margin-right: -13px;
+}
+
+.service{
+    text-align: center;
+}
+
+.service_text {
+    font-size: 24px;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    font-family: "Noto Sans KR SemiBold", serif;
+    margin-bottom: 12px;
+    margin-top: -10px;
+    margin-right: 47%;
+}
