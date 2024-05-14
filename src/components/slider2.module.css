@@ -1,0 +1,14 @@
+.slider2 img{
+    display: flex;
+    height: 200px;
+    padding: 10px;
+}
+
+.slider2 .slide{
+    width: 200px;
+}
+.slider2{
+    margin-top: 10px;
+    margin-left: 150px;
+    margin-right: 150px;
+}

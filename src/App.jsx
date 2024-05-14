@@ -7,8 +7,8 @@ import Event from './components/event';
 import Best from './components/best';
 import Post from './components/post';
 import Stationery from "./components/stationery";
-import Slider2 from './components/slider2';
 import New from "./components/new";
+import Slider2 from './components/slider2';
 import Info from "./components/info";
 import Suggest from "./components/suggest";
 import Service from "./components/service";
@@ -30,7 +30,9 @@ function App() {
                   <img src={'/thanks/thanks_ban_1911.png'} alt=''/>
               </a>
           </div>
-          <New></New>
+          <New/>
+          <Slider2/>
+          <Suggest/>
       </div>
   );
 }

@@ -29,18 +29,20 @@ const SliderComponent = () => {
                 {imageData.map((image, index) => (
                     <div key={index} className={styles.slide} style={{ backgroundColor: 'white', border: 'none', outline: 'none', position: 'relative' }}>
                         <div className={styles.image}>
-                            <img src={image.url} alt={image.alt} />
-                            <div className={styles.carousel_pagination}>
-                                <div className={styles.carousel_circle}></div>
-                                <div className={styles.carousel_circle}></div>
-                                <div className={styles.carousel_circle}></div>
-                                <div className={styles.carousel_circle}></div>
-                                <div className={styles.carousel_circle}></div>
-                                <div className={styles.carousel_circle}></div>
-                            </div>
+                            <a href={image.link} target="_blank" rel="noopener noreferrer">
+                                <img src={image.url} alt={image.alt}/>
+                                <div className={styles.carousel_pagination}>
+                                    <div className={styles.carousel_circle}></div>
+                                    <div className={styles.carousel_circle}></div>
+                                    <div className={styles.carousel_circle}></div>
+                                    <div className={styles.carousel_circle}></div>
+                                    <div className={styles.carousel_circle}></div>
+                                    <div className={styles.carousel_circle}></div>
+                                </div>
+                            </a>
                         </div>
                     </div>
-                ))}
+                    ))}
             </Slider>
         </div>
     );
