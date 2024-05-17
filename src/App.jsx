@@ -32,6 +32,7 @@ function App() {
           </div>
           <New/>
           <Slider2/>
+          <Info/>
           <Suggest/>
           <Service/>
           <Last/>
