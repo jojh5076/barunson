@@ -5,5 +5,6 @@
     background: url('/public/info/bg_brand.jpg') no-repeat fixed top left;
 }
  .info_img{
-     display: flex;
+   float: left;
+
  }
