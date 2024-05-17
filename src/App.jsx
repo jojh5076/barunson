@@ -34,6 +34,7 @@ function App() {
           <Slider2/>
           <Suggest/>
           <Service/>
+          <Last/>
       </div>
   );
 }

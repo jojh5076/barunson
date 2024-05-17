@@ -2,10 +2,25 @@ import React, {useState} from "react";
 import styles from './new.module.css';
         
 export function New() {
-    const [showList02, setShowList02] = useState(false);
+    const [isListVisible, setListVisible] = useState(false);
+    const [buttonClicked, setButtonClicked] = useState(false);
+    const [buttonImage1, setButtonImage1] = useState("/new/btn_add_blue_on.png");
+    const [buttonImage2, setButtonImage2] = useState("/new/btn_add_blue_off.png");
 
-    const toggleList02 = () => {
-        setShowList02(!showList02);
+    const toggleListVisibility = () => {
+        setListVisible(!isListVisible);
+        setButtonClicked(true);
+    };
+
+    const handleClick = () => {
+        if (buttonClicked) {
+
+            window.location.href = "https://www.barunsoncard.com/product/list_new.asp";
+        } else {
+            setButtonImage1("/best/btn_addp_blue_on.png")
+            setButtonImage2("/best/btn_addp_blue_off.png")
+            toggleListVisibility();
+        }
     };
 
     return(
@@ -114,7 +129,7 @@ export function New() {
                         </div>
                     </li>
                 </ul>
-                <ul className={`${styles.list_02} ${showList02 ? styles.active : ''}`}>
+                <ul className={`${styles.list_02} ${isListVisible ? styles.visible : styles.hidden}`}>
                     <li className={styles.s_thum}>
                         <a href="https://www.barunsoncard.com/product/detail.asp?card_seq=39116"
                            className={styles.showInfoBtn_ClickCount_gtm9}>
@@ -212,15 +227,11 @@ export function New() {
                     </li>
                 </ul>
             </div>
-
             <div className={styles.new_list_btn}>
-                <button className={styles.btn_roll} onClick={toggleList02}>
-                    {showList02 ? (
-                        <img className={styles.on_over} src="/new/btn_add_blue_on.png" alt=""/>
-                    ) : (
-                        <img className={styles.off_over} src="/new/btn_add_blue_off.png" alt=""/>
-                    )}
-                </button>
+                <a className={styles.btn_roll} onClick={handleClick}>
+                    <img className={styles.on_over} src={buttonImage1} alt=""/>
+                    <img className={styles.off_over} src={buttonImage2} alt=""/>
+                </a>
             </div>
         </div>
     )

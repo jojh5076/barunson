@@ -1,17 +1,28 @@
+.new_list_a{
+    text-align: center;
+    margin-bottom: 60px;
+}
 .new_list {
-    display: flex;
-    flex-wrap: wrap;
-    margin: 0;
+    margin-left: 8%;
+    margin-top: 20px;
+    text-align: center;
+    width: 1600px;
+    display: block;
 }
 
 .s_thum {
-    margin-right: 50px;
-    flex-wrap: wrap;
+    margin-left: -20px;
+    margin-right: -5px;
+    flex-basis: calc(25% - 20px);
+    display: block;
+    margin-bottom: 20px;
 }
 
 .list_01,
 .list_02 {
-    margin-left: 250px;
+    border: 0;
+    margin-left: 200px;
+    margin-right: -20px;
     display: flex;
     flex-wrap: wrap;
     text-align: center;
@@ -26,50 +37,50 @@
 .list_01 .lazyload,
 .list_02 .lazyload {
     background-color: #f0f0f0;
-    margin-left: -20px;
+    display: block;
+    text-align: center;
 }
 
 .goods_bold,
 .goods_pricing {
+    margin-top: 20px;
+    margin-left: -18px;
     text-align: center;
+    font-size: 12px;
 }
 
 .new_tit {
-    margin-left: 47%;
     margin-bottom: 10px;
     font-size: 20px;
 }
 
-.on_over {
+.on_over{
     display: none;
 }
 
-.new_list_btn {
+.btn_roll:hover .on_over{
+    display: inline;
+}
+
+
+.btn_roll:hover .off_over{
+    display: none;
+}
+
+.btn_roll:active .list_02 {
+    display: inline;
+}
+
+
+.new_list_btn{
     text-align: center;
-    background-color: white;
+    cursor: pointer;
 }
 
-.new_list_btn button {
-    border: none;
-    position: relative; /* 상대 위치 지정 */
+.list_02{
+    display: none;
 }
 
-.new_list_btn button .on_over,
-.new_list_btn button .off_over {
-    position: absolute; /* 절대 위치 지정 */
-    top: 0;
-    left: 0;
-    display: inline; /* 기본값은 inline으로 설정 */
-}
-
-.new_list_btn button .off_over {
-    display: inline; /* 초기에는 off_over 이미지가 보이지 않도록 설정 */
-}
-
-.new_list_btn button:hover .on_over {
-    display: none; /* on_over 이미지가 보이지 않도록 설정 */
-}
-
-.new_list_btn button:hover .off_over {
-    display: inline; /* off_over 이미지가 보이도록 설정 */
+.list_02.visible{
+    display: flex;
 }
