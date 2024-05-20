@@ -13,6 +13,8 @@ import Info from "./components/info";
 import Suggest from "./components/suggest";
 import Service from "./components/service";
 import Last from "./components/last";
+import Notice_cs from './components/notice_cs';
+import Footer from "./components/footer";
 
 
 function App() {
@@ -36,6 +38,8 @@ function App() {
           <Suggest/>
           <Service/>
           <Last/>
+          <Notice_cs/>
+          <Footer/>
       </div>
   );
 }
