@@ -1,0 +1,68 @@
+.box_sns {
+    bottom: 60px;
+    position: absolute;
+    right: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #333333;
+}
+
+.kl_industry li {
+    color: #666;
+    display: block;
+    font-size: 12px;
+}
+.kl_industry {
+    margin: 20px 0;
+    overflow: hidden;
+    width: 505px;
+}
+.footer_left{
+    float: left;
+}
+.footer_right {
+    float: right;
+    min-width: 350px;
+}
+.footer {
+    border-top: 3px solid #1f1f1f;
+    max-width: 1200px;
+    padding: 30px 0;
+    position: relative;
+    width: 1200px;
+    margin: 100px auto;
+    height: 193px;
+    clear: both;
+}
+.footer_right div {
+    display: inline-block;
+    vertical-align: top;
+}
+.footer_right .cstm {
+    margin-left: 65px;
+    margin-top: 26px;
+}
+.footer_right .callcenter {
+    margin: 28px 0 0 55px;
+}
+.footer_right h4 {
+    color: #1f1f1f;
+    font-size: 13px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+.footer_right ul li a {
+    color: #666;
+    font-size: 12px;
+    line-height: 20px;
+}
+.footer_right .callcenter .call-no {
+    color: #1f1f1f;
+    font-size: 24px;
+    font-weight: 700;
+    padding: 0 0 10px;
+}
+.copyright {
+    color: #1f1f1f;
+    font-size: 12px;
+}
