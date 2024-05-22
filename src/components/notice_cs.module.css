@@ -1,0 +1,97 @@
+.customerServiceTitle{
+    background: url('/public/notice/tit_main_custom.png') no-repeat;
+    width: 540px;
+    height: 19px;
+    padding-bottom: 35px;
+    border-bottom: 1px solid #dbdbdb;
+    margin-bottom: 10px;
+}
+
+.noticeTitle{
+    background: url('/public/notice/tit_main_notice.png') no-repeat;
+    height: 19px;
+    padding-bottom: 35px;
+    border-bottom: 1px solid #dbdbdb;
+    margin-bottom: 10px;
+    width: 540px;
+    margin-right: 20px;
+}
+
+.noticeGuides .noticeGuideItem, .noticeExtras .noticeExtraItem{
+    background: url('/public/notice/bg_main_etcbtn.png') no-repeat;
+    width: 140px;
+    height: 75px;
+    float: left;
+    padding-left: 10px;
+    padding-top: 16px;
+    font-size: 13px;
+}
+
+.noticeGuides{
+    margin-top: 33px;
+}
+
+.noticeContent{
+    float: left;
+    margin-left: 400px;
+    width: 560px;
+    height: 334px;
+}
+.customerContent{
+    float: left;
+}
+.customerServiceItem{
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+.customerServiceList li{
+    width: 263px;
+    height: 259px;
+    padding: 25px 0;
+    background-color: #f6f6f6;
+    float: left;
+    text-align: center;
+    margin-left: 2px;
+}
+
+.customerServiceList{
+    float: left;
+}
+.noticeList li{
+    font-size: 13px;
+    color: #333333;
+    float: left;
+    padding: 0;
+    margin-top: 20px;
+    width: 100%;
+    line-height: 1px;
+}
+.customerServiceTitle a{
+     margin-left: 490px;
+}
+
+.customerServiceTitle a span{
+    color: #666666;
+    font-size: 11px;
+}
+.noticeTitle a{
+    margin-left: 490px;
+}
+
+.noticeTitle a span{
+    color: #666666;
+    font-size: 11px;
+}
+
+.noticeList a{
+    color: #777;
+}
+.noticeGuides .noticeGuideItem span, .noticeExtras .noticeExtraItem span {
+    font-size: 12px;
+    display: inline-block;
+    width: 340px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: #666666;
+}
