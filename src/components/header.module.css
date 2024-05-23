@@ -8,10 +8,12 @@
 }
 
 .header_top {
-    height: 40px;
-    background: #f5f5f5;
-    border-bottom: 1px solid #e6e6e6;
-    font-size: 12px;
+    height: 48px;
+    background: #f7f7f7;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
 }
 
 .header_inner {
@@ -42,23 +44,65 @@
     text-decoration: none;
 }
 
-.header_navi ul li a img,
-.userMenu ul li a img {
-    vertical-align: middle;
-}
-
-.userMenu ul li span {
+.userMenu ul {
+    padding: 0;
+    list-style: none;
+    float: right;
+    display: inline;
+    margin-left: 20%;
     cursor: pointer;
 }
 
-.header_Menu {
-    background: #fff;
+.header_navi {
+    margin-left: 10%;
+}
+
+li {
+    display: inline;
+}
+
+ul li {
+    margin: 10px;
+}
+
+.sample_count {
+    color: white;
+    background-color: deepskyblue;
+    font-size: 20px;
+    padding: 0 5px;
+    border-radius: 50%;
+}
+
+.tooltip {
     position: relative;
+}
+
+.tooltip:before {
+    content: attr(data-hover);
+    visibility: hidden;
+    opacity: 0;
+    width: max-content;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 5px;
+    padding: 5px 5px;
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    top: 110%;
+}
+
+.tooltip:hover:before {
+    opacity: 1;
+    visibility: visible;
 }
 
 .head {
     height: 72px;
     border-bottom: 1px solid #ebebeb;
+    display: flex;
+    align-items: center;
 }
 
 .head_inner {
@@ -78,19 +122,29 @@
     margin-top: 32px;
 }
 
-.mega_gnb a {
-    display: block;
-    padding: 10px 15px;
-    background: #f8f8f8;
-    border-radius: 5px;
-    color: #333;
-    text-decoration: none;
-    font-size: 14px;
-    font-weight: bold;
+.mega_gnb {
+    position: absolute;
+    right: 203px;
+    top: 9px;
+    margin-top: 31px;
+}
+
+.mega_gnb a strong {
+    display: inline-block;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 500;
+    color: #59a3ff;
+    vertical-align: middle;
 }
 
 .search_a {
-    position: relative;
+    background: #fff;
+    float: right;
+    width: 176px;
+    height: 42px;
+    position: absolute;
+    margin-top: 31px;
 }
 
 .search_a input {
@@ -108,155 +162,111 @@
     border: none;
 }
 
-.gnb_a {
-    width: 100%;
-    background: #fff;
-    border-top: 1px solid #ebebeb;
-}
-
 .gnb {
-    width: 1200px;
-    margin: 0 auto;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px 0;
-}
-
-.menu {
-    display: flex;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-.menu li {
-    margin-right: 20px;
-    position: relative;
-}
-
-.menu li a,
-.menu li button {
-    color: #333;
-    text-decoration: none;
-    font-size: 14px;
 }
 
 .sgnb_b {
-    display: flex;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-.sgnb_b li {
-    margin-right: 20px;
-    position: relative;
-}
-
-.sgnb_b_box {
-    position: absolute;
-    top: 30px;
-    left: 0;
-    background: #fff;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    border: 1px solid #ebebeb;
-    z-index: 999;
-}
-
-.sgnb_b_list_01,
-.sgnb_b_list_02,
-.sgnb_b_list_03 {
-    list-style: none;
-    padding: 10px;
-    margin: 0;
-}
-
-.sgnb_b_list_01 li,
-.sgnb_b_list_02 li,
-.sgnb_b_list_03 li {
-    margin-bottom: 5px;
-}
-
-.sgnb_b_list_01 li a,
-.sgnb_b_list_02 li a,
-.sgnb_b_list_03 li a {
-    color: #333;
-    text-decoration: none;
-    font-size: 12px;
-}
-
-.all_a {
-    display: none;
-    position: absolute;
-    top: 60px;
-    left: 0;
-    width: 100%;
-    background: #fff;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    border: 1px solid #ebebeb;
-}
-
-.all_a.opened {
-    display: block;
+    display: inline-flex;
 }
 
 .all_menu {
-    width: 1200px;
-    margin: 0 auto;
-    padding: 20px 0;
-    display: flex;
+    display: none;
+    position: relative;
+    width: 100%;
+    backdrop-filter: blur(30px);
+    background-color: rgba(255, 255, 255, 0.8);
+    border-bottom: 1px solid #ebebeb;
+    z-index: 12;
 }
 
-.all_menu_in_left {
-    width: 50%;
+.opened .all_menu {
+    display: block;
 }
 
-.all_menu_in_left ul {
-    list-style: none;
-    padding: 0;
-    margin: 0 0 20px 0;
+.all_a {
+    overflow: hidden;
+    height: 100%;
+    transition: max-height 0.3s ease-out;
 }
 
-.all_menu_in_left ul li {
-    margin-bottom: 10px;
+.opened .all_a {
+    height: 100%;
 }
 
-.all_menu_in_left ul li a {
-    color: #333;
-    text-decoration: none;
-    font-size: 14px;
+.all_menu .all_menu_in_left {
+    display: grid;
+    grid-template-columns: repeat(3, 138px);
+    grid-gap: 0 70px;
+    padding-left: 32px;
 }
 
-.all_menu_tooltip {
-    background: none;
-    border: none;
-    cursor: pointer;
-}
-
-.tooltip_box_tooltip_box_1,
-.tooltip_box_tooltip_box_2 {
+.all_menu .tooltip_box {
     display: none;
     position: absolute;
-    top: 30px;
-    left: 0;
-    background: #fff;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    border: 1px solid #ebebeb;
-    z-index: 999;
-    padding: 10px;
-    width: 200px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 236px;
+    padding: 12px 12px 10px;
+    border-radius: 3px;
+    border: solid 1px #ddd;
+    box-sizing: border-box;
+    background-color: #fff;
+    z-index: 10;
 }
 
-.point {
-    color: red;
+.mega_gnb a span {
+    display: inline-block;
+    width: 40px;
+    height: 24px;
+    line-height: 24px;
+    background: #59a4ff;
+    font-size: 15px;
+    color: #fff;
+    font-weight: 400;
+    border-radius: 20px;
+    text-align: center;
+    vertical-align: middle;
+    margin-left: 2px;
 }
 
-.primary {
-    color: blue;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.opened + .tooltip_box_tooltip_box_1,
-.opened + .tooltip_box_tooltip_box_2 {
-    display: block;
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+header {
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px 0;
+}
+
+.logo {
+    font-size: 24px;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
 }
