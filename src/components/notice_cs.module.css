@@ -7,7 +7,7 @@
     margin-bottom: 10px;
 }
 
-.noticeTitle{
+.noticeTitle {
     background: url('/public/notice/tit_main_notice.png') no-repeat;
     height: 19px;
     padding-bottom: 35px;
@@ -26,7 +26,15 @@
     padding-top: 16px;
     font-size: 13px;
 }
+.noticeGuides li{
+    margin-right: -3px;
+    padding-left: 10px;
 
+}
+.noticeExtraItem{
+    margin-top: 0;
+    margin-right: -3px;
+}
 .noticeGuides{
     margin-top: 33px;
 }
@@ -62,9 +70,8 @@
     color: #333333;
     float: left;
     padding: 0;
-    margin-top: 20px;
+    margin-top: -5px;
     width: 100%;
-    line-height: 1px;
 }
 .customerServiceTitle a{
      margin-left: 490px;
@@ -94,7 +101,12 @@
     overflow: hidden;
     text-overflow: ellipsis;
     color: #666666;
+    padding: 0;
 }
 .notice_csContainer{
     margin-bottom: 350px;
+}
+.noticeList{
+    margin-top: 30px;
+    margin-bottom: 110px;
 }
