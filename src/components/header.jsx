@@ -87,9 +87,8 @@ function Header() {
                                 </div>
                                 <div className={styles.search_a}>
                                     <fieldset>
-                                        <form name="topFrm" method="post" style={{borderBottom: "1px solid #555"}}>
-                                            <input type="text" id="search_value" name="search_value"
-                                                   className={styles.itext_jtxtoff} title="카드코드를 입력해 주세요" onKeyDown=""/>
+                                        <form style={{borderBottom: "1px solid #555"}}>
+                                            <input className={styles.itext_jtxtoff} placeholder="카드코드를 입력해 주세요" onKeyDown=""/>
                                             <a href="#" className={styles.btn_search}
                                                onClick={() => document.getElementsByName('topFrm')[0].submit()}>
                                                 <img
@@ -127,7 +126,7 @@ function Header() {
                                    href="https://www.barunsoncard.com/event/weddingfreecoupon.asp"
                                    title="식전영상 바로가기"> 식전영상 </a>
                             </li>
-                            <li className={styles.gnb_new} id="gnb_mo">
+                            <li className={styles.btn_roll} id="gnb_mo">
                                 <a className={styles.btn_roll}
                                    href="https://www.barunsoncard.com/event/event_gift.asp"
                                    title="답례품 바로가기"> 답례품 </a>
@@ -142,12 +141,12 @@ function Header() {
                                    href="https://www.barunsoncard.com/product/list_option_intro.asp"
                                    title="부가상품 바로가기"> 부가상품 </a>
                             </li>
-                            <li className={styles.etc_menu_etc_menu_01}>
+                            <li className={styles.btn_roll}>
                                 <a className={styles.btn_roll}
                                    href="https://www.barunsoncard.com/product/list_best.asp"
                                    title="베스트 바로가기"> 베스트 </a>
                             </li>
-                            <li className={styles.etc_menu_etc_menu_02}>
+                            <li className={styles.btn_roll}>
                                 <a className={styles.btn_roll}
                                    href="https://www.barunsoncard.com/product/list_new.asp"
                                    title="신상 바로가기"> 신상 </a>
@@ -160,10 +159,10 @@ function Header() {
                                 <div className={styles.sgnb_b_box}>
                                     <ul className={styles.sgnb_b_list_01}>
                                         <li>
-                                            <a href="https://www.barunsoncard.com/event/event_sampleReviews.asp"> 샘플후기 </a>
+                                            <a href="https://www.barunsoncard.com/event/event_sampleReviews.asp">샘플후기 </a>
                                         </li>
                                         <li>
-                                            <a href="https://www.barunsoncard.com/gnb/review_list.asp"> 구매후기 </a>
+                                            <a href="https://www.barunsoncard.com/gnb/review_list.asp">구매후기 </a>
                                         </li>
                                     </ul>
                                 </div>

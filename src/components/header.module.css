@@ -147,7 +147,7 @@
 .gnb_a {
     width: 100%;
     max-width: 1200px;
-    margin: 0 auto;
+    margin: 20px auto -8px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -174,18 +174,33 @@
 .dot_type::after {
     content: '•';
     color: #ff6b6b;
-    padding-top: 10px;
+    padding-top: 5px;
+    position: absolute;
+    top: -10px;
+    left: 30px;
+    z-index: 20;
 }
+.sgnb_b_list_02 span{
+    color: #ff6b6b;
+    position: absolute;
+    top: -5px;
+    left: 66%;
+    z-index: 20;
+    padding-top: 5px;
+    font-size: 10px;
 
+}
 .sgnb_b_box {
     position: absolute;
     background-color: #fff;
-    border: 1px solid #ddd;
-    top: 100%;
-    left: 0;
+    top: 140%;
+    left: 50%;
     z-index: 10;
     padding: 10px;
-    display: none;
+    display: flex;
+    width: 150px;
+    text-align: center;
+    margin-left: -70px;
 }
 
 .sgnb_b_list_01,
@@ -194,10 +209,18 @@
     list-style: none;
     padding: 0;
     margin: 0;
+    text-align: center;
+    display: flex;
+    justify-items: center;
+    height: 100%;
+    flex-direction: column;
 }
 
 .sgnb_b_box li {
     padding: 5px 0;
+    text-align: center;
+    margin: 0;
+    line-height: 80%;
 }
 
 .sgnb_b_box a {
@@ -258,4 +281,27 @@ li:hover .sgnb_b_box {
 .all_menu_tooltip:hover .tooltip_box_tooltip_box_1,
 .all_menu_tooltip:hover .tooltip_box_tooltip_box_2 {
     display: block;
+}
+
+.itext_jtxtoff {
+    font-size: 11px;
+    text-align: left;
+    color: #666666;
+}
+
+input:focus{
+    outline: none;
+}
+
+input:focus::placeholder{
+    color: transparent;
+}
+
+.gnb ul+ul{
+    cursor: pointer;
+    padding-left: 400px;
+}
+
+.gnb{
+    display:inline-flex;
 }
