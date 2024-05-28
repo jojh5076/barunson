@@ -214,7 +214,7 @@ function Header() {
                             <div className={styles.all_menu_in_left}>
                                 <ul>
                                     <li>
-                                        <span>카드</span>
+                                        <span className={styles.primary}>카드</span>
                                     </li>
                                     <li>
                                         <a href="https://www.barunsoncard.com/product/list_all.asp">청첩장
@@ -259,7 +259,9 @@ function Header() {
                                     </li>
                                 </ul>
                                 <ul>
-                                    <li><span>추천서비스</span></li>
+                                    <li>
+                                        <span className={styles.primary}>추천서비스</span>
+                                    </li>
                                     <li>
                                         <a href="https://www.barunsoncard.com/product/product_list_pservice.asp">제본대행
                                             서비스</a>

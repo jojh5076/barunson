@@ -236,38 +236,39 @@ li:hover .sgnb_b_box {
 .all_a {
     position: absolute;
     left: 0;
-    top: -100%;
+    top: 20%;
     width: 100%;
     transition: top 0.3s ease-in-out;
 }
 
 .all_a.opened {
     position: absolute;
-    top: 20%;
+    top: 17%;
 }
 
 .all_menu {
     background-color: #fff;
     border-top: 1px solid #ddd;
     padding: 20px;
+    position: relative;
+    z-index: 10;
 }
 
 .all_menu_in_left {
-    display: flex;
     flex-direction: column;
     gap: 20px;
+    position: absolute;
 }
 
 .all_menu_in_left ul {
-    display: flex;
+    display: inline-block;
     flex-direction: column;
     list-style: none;
     padding: 0;
-    margin: 0 0 20px 0;
 }
 
 .all_menu_in_left li {
-    padding: 5px 0;
+    padding: 5px 10px;
 }
 
 .all_menu_in_left a {
