@@ -236,19 +236,19 @@ li:hover .sgnb_b_box {
 .all_a {
     position: absolute;
     left: 0;
-    top: 20%;
+    top: 18.2%;
     width: 100%;
-    transition: top 0.3s ease-in-out;
+
 }
 
 .all_a.opened {
-    position: absolute;
-    top: 17%;
+    position:relative;
+    top: 15%;
+    display: none;
 }
 
 .all_menu {
-    background-color: #fff;
-    border-top: 1px solid #ddd;
+    background-color: rgba(255, 255, 255, 0.8);
     padding: 20px;
     position: relative;
     z-index: 10;
@@ -257,18 +257,22 @@ li:hover .sgnb_b_box {
 .all_menu_in_left {
     flex-direction: column;
     gap: 20px;
-    position: absolute;
+    position: relative;
+    margin-left: 18%;
+    backdrop-filter: blur(10px);
 }
 
 .all_menu_in_left ul {
-    display: inline-block;
+    display: inline-flex;
     flex-direction: column;
     list-style: none;
     padding: 0;
 }
 
 .all_menu_in_left li {
+
     padding: 5px 10px;
+    margin-left: 30px;
 }
 
 .all_menu_in_left a {
@@ -327,4 +331,10 @@ input:focus::placeholder {
     position: absolute;
     margin-top: 0.2%;
     margin-left: 0.1%;
+}
+.primary{
+    font-weight: bold;
+}
+.primary_ {
+    font-size: 20px;
 }
