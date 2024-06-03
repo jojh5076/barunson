@@ -1,3 +1,4 @@
+/* 기본 스타일 유지 */
 .header_box {
     width: 100%;
 }
@@ -335,9 +336,78 @@ input:focus::placeholder {
     margin-top: 0.2%;
     margin-left: 0.2%;
 }
+
 .primary{
     font-weight: bold;
 }
 .primary_ {
     font-size: 20px;
+}
+
+/* 반응형 디자인을 위한 미디어 쿼리 추가 */
+@media (max-width: 1200px) {
+    .mega_gnb {
+        margin-left: 100px;
+    }
+}
+
+@media (max-width: 992px) {
+    .header_inner,
+    .gnb_a,
+    .head {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .header_navi ul,
+    .userMenu ul,
+    .gnb ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .mega_gnb {
+        margin-left: 0;
+    }
+
+    .search_a {
+        float: none;
+        margin: 10px 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .header_navi {
+        display: none;
+    }
+
+    .gnb ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .all_a {
+        top: 25%;
+    }
+
+    .all_menu_in_left {
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 576px) {
+    .header_top {
+        padding: 5px 0;
+    }
+
+    .header_inner,
+    .gnb_a,
+    .head {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .search_a input {
+        width: 100%;
+    }
 }

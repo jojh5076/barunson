@@ -5,7 +5,8 @@
 }
 
 .best_list {
-    width: 1245px;
+    width: 100%;
+    max-width: 1245px;
     margin: 0 auto;
     text-align: center;
 }
@@ -13,11 +14,8 @@
 .best_tit {
     margin-top: 10px;
     align-items: center;
-    text-decoration-line: none ;
+    text-decoration-line: none;
     font-size: large;
-}
-
-.best_tit {
     text-align: center;
 }
 
@@ -55,33 +53,90 @@
     margin-left: 10px;
 }
 
-.bestImg2{
+.bestImg2 {
     display: none;
 }
 
-.best_list_btn{
+.best_list_btn {
     text-align: center;
 }
 
-.best_list_btn :hover .bestImg2{
+.best_list_btn:hover .bestImg2 {
     display: inline;
 }
 
-.best_list_btn  :hover .bestImg1{
+.best_list_btn:hover .bestImg1 {
     display: none;
 }
 
-.goods_pricing{
+.goods_pricing {
     padding-top: 30px;
     text-align: center;
     font-size: small;
     color: gray;
 }
 
-.goods_bold{
+.goods_bold {
     color: black;
 }
 
-a{
+a {
     text-decoration-line: none;
+}
+
+/* 반응형 디자인을 위한 미디어 쿼리 추가 */
+@media (max-width: 1200px) {
+    .list_01 {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 992px) {
+    .list_01 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .m_tit {
+        font-size: 20px;
+    }
+
+    .best_tit {
+        font-size: medium;
+    }
+}
+
+@media (max-width: 768px) {
+    .list_01 {
+        grid-template-columns: 1fr;
+    }
+
+    .m_tit {
+        font-size: 18px;
+    }
+
+    .best_tit {
+        font-size: small;
+    }
+
+    .goods_pricing {
+        font-size: x-small;
+    }
+}
+
+@media (max-width: 576px) {
+    .best_list {
+        padding: 0 10px;
+    }
+
+    .m_tit {
+        font-size: 16px;
+    }
+
+    .best_tit {
+        font-size: small;
+    }
+
+    .goods_pricing {
+        font-size: x-small;
+    }
 }
