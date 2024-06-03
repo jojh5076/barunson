@@ -209,7 +209,7 @@ function Header() {
                     <div className={`${styles.all_a} ${isMenuOpen ? styles.opened : ''}`}>
                         <div className={styles.all_menu}>
                             <div className={styles.all_menu_in_left}>
-                                <ul>
+                                <ul style={{marginRight: '30px'}}>
                                     <li>
                                         <span className={styles.primary}>카드</span>
                                     </li>
@@ -222,7 +222,7 @@ function Header() {
                                             <span className={styles.point}>FREE</span></a>
                                     </li>
                                     <li>
-                                        <a href="https://www.barunsoncard.com/product/list_thanks.asp">감사장
+                                        <a href="https://www.barunsoncard.com/product/list_thanks.asp">감사장/돈봉투
                                             <span className={styles.point}>15% 쿠폰</span>
                                         </a>
                                     </li>
