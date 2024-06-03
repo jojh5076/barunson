@@ -1,26 +1,27 @@
 .footer {
     border-top: 3px solid #1f1f1f;
     max-width: 1200px;
-    padding: 30px 0;
+    padding: 30px 20px; /* 양옆 padding 추가 */
     position: relative;
-    width: 1200px;
-    height: 200px;
+    width: 100%; /* width를 100%로 변경하여 반응형 적용 */
+    height: auto; /* height를 auto로 변경하여 콘텐츠에 맞게 조정 */
     clear: both;
-    margin: 100px auto auto;
-    margin-bottom: 30px;
+    margin: 100px auto 30px; /* margin 간소화 */
 }
 
 .footer_container {
     display: flex;
+    flex-wrap: wrap; /* 요소들이 화면 크기에 따라 줄 바꿈되도록 */
     justify-content: space-between;
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
-    vertical-align:middle;
+    vertical-align: middle;
 }
 
 .footer_left {
-    flex: 1;
+    flex: 1 1 100%; /* 기본적으로 100% 차지 */
+    margin-bottom: 20px; /* 아래 요소들과의 간격 조정 */
 }
 
 .footer_left .logo {
@@ -29,13 +30,13 @@
 
 .kl_industry {
     font-size: 12px;
-    line-height: 50%;
+    line-height: 1.5; /* 줄 간격 조정 */
     color: #666;
-    display:flex;
-    align-content:flex-start;
-    flex-direction:column;
+    display: flex;
+    align-content: flex-start;
+    flex-direction: column;
     margin-bottom: 10px;
-    margin-left: -10px;
+    margin-left: 0; /* 기본값으로 변경 */
 }
 
 .kl_industry li {
@@ -48,32 +49,36 @@
 }
 
 .footer_right {
-    flex: 1;
+    flex: 1 1 100%; /* 기본적으로 100% 차지 */
     display: flex;
+    flex-wrap: wrap; /* 요소들이 화면 크기에 따라 줄 바꿈되도록 */
     justify-content: space-between;
+    margin-top: 20px;
 }
 
 .e_kolon, .cstm, .callcenter {
-    width: 100%;
+    width: 100%; /* 기본적으로 100% 차지 */
+    margin-bottom: 20px; /* 아래 요소들과의 간격 조정 */
 }
 
-.e_kolon h4 {
+.e_kolon h4, .cstm h4, .callcenter h4 {
     font-size: 14px;
     margin-bottom: 10px;
     color: #333;
     margin-left: 10px;
 }
+
 .e_kolon ul, .cstm ul, .callcenter ul {
     padding: 0;
     margin: 0;
     font-size: 12px;
     color: #666;
-    line-height: 50%;
-    display:flex;
-    align-content:flex-start;
-    flex-direction:column;
+    line-height: 1.5; /* 줄 간격 조정 */
+    display: flex;
+    align-content: flex-start;
+    flex-direction: column;
     width: 100%;
-    flex-wrap:wrap;
+    flex-wrap: wrap;
 }
 
 .e_kolon ul li, .cstm ul li, .callcenter ul li {
@@ -116,22 +121,83 @@
     color: #333333;
     padding-left: -10px;
 }
+
 .footer_right h4 {
     color: #1f1f1f;
     font-size: 13px;
     font-weight: 700;
     margin-bottom: 15px;
 }
-.cstm{
+
+.cstm {
     margin-top: 30px;
 }
-.callcenter{
+
+.callcenter {
     margin-top: 30px;
 }
-.callcenter ul li{
+
+.callcenter ul li {
     display: flex;
     float: right;
 }
-.e_kolon{
+
+.e_kolon {
     margin-left: 100px;
+}
+
+/* 반응형 디자인을 위한 미디어 쿼리 추가 */
+@media (max-width: 1200px) {
+    .footer_container {
+        padding: 0 10px;
+    }
+    .e_kolon {
+        margin-left: 50px;
+    }
+}
+
+@media (max-width: 992px) {
+    .footer_container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .footer_right {
+        margin-top: 20px;
+        flex-direction: column;
+    }
+    .e_kolon, .cstm, .callcenter {
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    .footer_container {
+        padding: 0 10px;
+    }
+    .e_kolon {
+        margin-left: 0;
+    }
+    .footer_right {
+        align-items: flex-start;
+    }
+}
+
+@media (max-width: 576px) {
+    .footer_container {
+        padding: 0 5px;
+    }
+    .e_kolon {
+        margin-left: 0;
+    }
+    .footer_left .logo {
+        margin-bottom: 10px;
+    }
+    .footer_right {
+        align-items: center;
+    }
+    .box_sns {
+        position: static;
+        margin-top: 10px;
+        justify-content: center;
+    }
 }
