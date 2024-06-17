@@ -1,10 +1,11 @@
 .service_list img{
     padding: 0;
-    margin-right: 10px;
+    margin-right: 5px;
 }
 
 .service{
     text-align: center;
+    margin-left: -30px;
 }
 
 .service_text {
