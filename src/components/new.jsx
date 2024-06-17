@@ -33,8 +33,7 @@ export function New() {
                 </div>
                 <ul className={styles.list_01}>
                     <li className={styles.s_thum}>
-                        <a href="https://www.barunsoncard.com/product/detail.asp?card_seq=39309"
-                           className={styles.showInfoBtn_ClickCount_gtm1}>
+                        <a href="https://www.barunsoncard.com/product/detail.asp?card_seq=39309">
                             <img className={styles.lazyload} src="/new/303.png" alt=""/>
                         </a>
                         <div className={styles.goods_pricing}>
@@ -45,8 +44,7 @@ export function New() {
                     </li>
 
                     <li className={styles.s_thum}>
-                        <a href="https://www.barunsoncard.com/product/detail.asp?card_seq=39264"
-                           className={styles.showInfoBtn_ClickCount_gtm2}>
+                        <a href="https://www.barunsoncard.com/product/detail.asp?card_seq=39264">
                             <img className={styles.lazyload} src="/new/303 (1).png" alt=""/>
                         </a>
                         <div className={styles.goods_pricing}>
@@ -58,8 +56,7 @@ export function New() {
                     </li>
 
                     <li className={styles.s_thum}>
-                        <a href="https://www.barunsoncard.com/product/detail.asp?card_seq=39069"
-                           className={styles.showInfoBtn_ClickCount_gtm3}>
+                        <a href="https://www.barunsoncard.com/product/detail.asp?card_seq=39069">
                             <img className={styles.lazyload} src="/new/303 (2).png" alt=""/>
                         </a>
                         <div className={styles.goods_pricing}>
@@ -70,8 +67,7 @@ export function New() {
                     </li>
 
                     <li className={styles.s_thum}>
-                        <a href="https://www.barunsoncard.com/product/detail.asp?card_seq=39191"
-                           className={styles.showInfoBtn_ClickCount_gtm4}>
+                        <a href="https://www.barunsoncard.com/product/detail.asp?card_seq=39191">
                             <img className={styles.lazyload} src="/new/303 (3).png" alt=""/>
                         </a>
                         <div className={styles.goods_pricing}>
@@ -82,8 +78,7 @@ export function New() {
                     </li>
 
                     <li className={styles.s_thum}>
-                        <a href="https://www.barunsoncard.com/product/detail.asp?card_seq=37148"
-                           className={styles.showInfoBtn_ClickCount_gtm5}>
+                        <a href="https://www.barunsoncard.com/product/detail.asp?card_seq=37148">
                             <img className={styles.lazyload} src="/new/303 (4).png" alt=""/>
                         </a>
                         <div className={styles.goods_pricing}>
@@ -94,8 +89,7 @@ export function New() {
                     </li>
 
                     <li className={styles.s_thum}>
-                        <a href="https://www.barunsoncard.com/product/detail.asp?card_seq=39263"
-                           className={styles.showInfoBtn_ClickCount_gtm6}>
+                        <a href="https://www.barunsoncard.com/product/detail.asp?card_seq=39263">
                             <img className={styles.lazyload} src="/new/303 (5).png" alt=""/>
                         </a>
                         <div className={styles.goods_pricing}>
@@ -106,8 +100,7 @@ export function New() {
                     </li>
 
                     <li className={styles.s_thum}>
-                        <a href="https://www.barunsoncard.com/product/detail.asp?card_seq=39170"
-                           className={styles.showInfoBtn_ClickCount_gtm7}>
+                        <a href="https://www.barunsoncard.com/product/detail.asp?card_seq=39170">
                             <img className={styles.lazyload} src="/new/303 (6).png" alt=""/>
                         </a>
                         <div className={styles.goods_pricing}>
@@ -118,8 +111,7 @@ export function New() {
                     </li>
 
                     <li className={styles.s_thum}>
-                        <a href="https://www.barunsoncard.com/product/detail.asp?card_seq=39129"
-                           className={styles.showInfoBtn_ClickCount_gtm8}>
+                        <a href="https://www.barunsoncard.com/product/detail.asp?card_seq=39129">
                             <img className={styles.lazyload} src="/new/303 (7).png" alt=""/>
                         </a>
                         <div className={styles.goods_pricing}>
@@ -131,8 +123,7 @@ export function New() {
                 </ul>
                 <ul className={`${styles.list_02} ${isListVisible ? styles.visible : styles.hidden}`}>
                     <li className={styles.s_thum}>
-                        <a href="https://www.barunsoncard.com/product/detail.asp?card_seq=39116"
-                           className={styles.showInfoBtn_ClickCount_gtm9}>
+                        <a href="https://www.barunsoncard.com/product/detail.asp?card_seq=39116">
                             <img className={styles.lazyload} src="/new/303 (8).png" alt=""/>
                         </a>
                         <div className={styles.goods_pricing}>
@@ -143,8 +134,7 @@ export function New() {
                     </li>
 
                     <li className={styles.s_thum}>
-                        <a href="https://www.barunsoncard.com/product/detail.asp?card_seq=39144"
-                           className={styles.showInfoBtn_ClickCount_gtm10}>
+                        <a href="https://www.barunsoncard.com/product/detail.asp?card_seq=39144">
                             <img className={styles.lazyload} src="/new/303 (9).png" alt=""/>
                         </a>
                         <div className={styles.goods_pricing}>
@@ -155,8 +145,7 @@ export function New() {
                     </li>
 
                     <li className={styles.s_thum}>
-                        <a href="https://www.barunsoncard.com/product/detail.asp?card_seq=39183"
-                           className={styles.showInfoBtn_ClickCount_gtm11}>
+                        <a href="https://www.barunsoncard.com/product/detail.asp?card_seq=39183">
                             <img className={styles.lazyload} src="/new/303 (10).png" alt=""/>
                         </a>
                         <div className={styles.goods_pricing}>
@@ -167,8 +156,7 @@ export function New() {
                     </li>
 
                     <li className={styles.s_thum}>
-                        <a href="https://www.barunsoncard.com/product/detail.asp?card_seq=39118"
-                           className={styles.showInfoBtn_ClickCount_gtm12}>
+                        <a href="https://www.barunsoncard.com/product/detail.asp?card_seq=39118">
                             <img className={styles.lazyload} src="/new/303 (11).png" alt=""/>
                         </a>
                         <div className={styles.goods_pricing}>
@@ -179,8 +167,7 @@ export function New() {
                     </li>
 
                     <li className={styles.s_thum}>
-                        <a href="https://www.barunsoncard.com/product/detail.asp?card_seq=39311"
-                           className={styles.showInfoBtn_ClickCount_gtm13}>
+                        <a href="https://www.barunsoncard.com/product/detail.asp?card_seq=39311">
                             <img className={styles.lazyload} src="/new/303 (12).png" alt=""/>
                         </a>
                         <div className={styles.goods_pricing}>
@@ -191,8 +178,7 @@ export function New() {
                     </li>
 
                     <li className={styles.s_thum}>
-                        <a href="https://www.barunsoncard.com/product/detail.asp?card_seq=39133"
-                           className={styles.showInfoBtn_ClickCount_gtm14}>
+                        <a href="https://www.barunsoncard.com/product/detail.asp?card_seq=39133">
                             <img className={styles.lazyload} src="/new/303 (13).png" alt=""/>
                         </a>
                         <div className={styles.goods_pricing}>
@@ -203,8 +189,7 @@ export function New() {
                     </li>
 
                     <li className={styles.s_thum}>
-                        <a href="https://www.barunsoncard.com/product/detail.asp?card_seq=39163"
-                           className={styles.showInfoBtn_ClickCount_gtm15}>
+                        <a href="https://www.barunsoncard.com/product/detail.asp?card_seq=39163">
                             <img className={styles.lazyload} src="/new/303 (14).png" alt=""/>
                         </a>
                         <div className={styles.goods_pricing}>
@@ -215,8 +200,7 @@ export function New() {
                     </li>
 
                     <li className={styles.s_thum}>
-                        <a href="https://www.barunsoncard.com/product/detail.asp?card_seq=39172"
-                           className={styles.showInfoBtn_ClickCount_gtm16}>
+                        <a href="https://www.barunsoncard.com/product/detail.asp?card_seq=39172">
                             <img className={styles.lazyload} src="/new/303 (15).png" alt=""/>
                         </a>
                         <div className={styles.goods_pricing}>

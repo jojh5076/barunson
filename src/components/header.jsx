@@ -9,6 +9,7 @@ function Header() {
 
     const handleMenuToggle = () => {
         setIsMenuOpen(!isMenuOpen);
+
     };
 
     return (

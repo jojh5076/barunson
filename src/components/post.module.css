@@ -22,11 +22,11 @@
     flex-direction: column;
     list-style-type: none;
     padding: 0;
+    margin-top: -10px;
 }
 
 .list ul li {
-    width: 30%;
-    margin-bottom: 20px;
+    width: 80%;
     border-top: 1px solid #D9D9D9;
     padding: 12px 0;
 }
@@ -60,14 +60,14 @@
 .curation_main .contents .main_case .item .img_box img{
     width: 448px;
     height: 404px;
-    object-fit: cover;
 }
 .curation_main .contents .main_case .item{
     position: relative;
     margin-bottom: 20px;
 }
 .curation_main .contents .sub_case .item{
-    padding: 0 20px;
+    margin-left: 30px;
+    margin-right: -50px;
     float: left;
     position: relative;
     width: 326px;
@@ -78,6 +78,7 @@
     background-color: #F0F0F0;
     padding-bottom: 52px;
     height: 1000px;
+    margin-top: -23px;
 }
 
 .area {
@@ -111,10 +112,8 @@
 }
 .main_case .item .txt_box {
     position: absolute;
-    left: 25px;
-    bottom: 26px;
-    padding-right: 25px;
-    right: 0;
+    left: 10px;
+    bottom: 0px;
     color: white;
 }
 
@@ -141,6 +140,16 @@
     font-size: 12px;
     float: left;
     width: 256px;
-    display: flex;
+    display: inline-flex;
     align-items: center;
+}
+
+.sub_case .item .thumb .txt_box {
+    margin-top: -20px;
+}
+
+.sub_case .item .list .txt_box p{
+    margin-top: -10px;
+    margin-bottom: -3px;
+    color: black;
 }

@@ -22,7 +22,7 @@
 .list_02 {
     border: 0;
     margin-left: 200px;
-    margin-right: -20px;
+    margin-right: -30px;
     display: flex;
     flex-wrap: wrap;
     text-align: center;
@@ -36,9 +36,14 @@
 
 .list_01 .lazyload,
 .list_02 .lazyload {
-    background-color: #f0f0f0;
     display: block;
     text-align: center;
+}
+
+.list_01 img,
+.list_02 img {
+    background-color: #f0f0f0;
+    width: 90%;
 }
 
 .goods_bold,

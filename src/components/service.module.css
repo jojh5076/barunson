@@ -1,6 +1,6 @@
 .service_list img{
     padding: 0;
-    margin-right: -13px;
+    margin-right: 10px;
 }
 
 .service{
@@ -15,4 +15,8 @@
     font-family: "Noto Sans KR SemiBold", serif;
     margin-bottom: 12px;
     margin-top: 10px;
+}
+
+.service_list{
+    display: inline-flex;
 }

@@ -1,84 +1,21 @@
 .container {
     display: flex;
     margin: auto;
-    flex-wrap: wrap; /* 요소들이 화면 크기에 따라 줄 바꿈되도록 */
 }
-
 .event_container {
     display: flex;
     align-items: center;
     width: 100%;
     margin: 20px 0 40px;
-    flex-wrap: wrap; /* 요소들이 화면 크기에 따라 줄 바꿈되도록 */
 }
 
 .event p {
     display: flex;
     color: black;
-    margin: 10px 60px; /* float 및 margin-top 제거하여 정렬 조정 */
+    float: left;
+    margin-left: 60px;
+    margin-top: 10px;
 }
-
-.event img {
+.event img{
     margin-left: -90px;
-}
-
-/* 반응형 디자인을 위한 미디어 쿼리 추가 */
-@media (max-width: 1200px) {
-    .event p {
-        margin-left: 40px;
-    }
-    .event img {
-        margin-left: -60px;
-    }
-}
-
-@media (max-width: 992px) {
-    .container {
-        flex-direction: column; /* 작은 화면에서는 요소들이 수직으로 정렬되도록 */
-        align-items: center;
-    }
-
-    .event_container {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    .event p {
-        margin-left: 20px;
-        margin-top: 10px;
-        text-align: center; /* 가운데 정렬 */
-    }
-
-    .event img {
-        margin: 10px auto; /* 이미지 가운데 정렬 */
-    }
-}
-
-@media (max-width: 768px) {
-    .event p {
-        margin-left: 10px;
-        margin-top: 5px;
-        font-size: small; /* 텍스트 크기 조정 */
-    }
-
-    .event img {
-        margin-left: 0;
-        margin: 5px auto; /* 이미지 가운데 정렬 */
-    }
-}
-
-@media (max-width: 576px) {
-    .event_container {
-        align-items: center; /* 작은 화면에서는 요소들이 가운데 정렬되도록 */
-    }
-
-    .event p {
-        margin: 5px 10px;
-        text-align: center; /* 텍스트 가운데 정렬 */
-        font-size: x-small; /* 텍스트 크기 더 작게 */
-    }
-
-    .event img {
-        margin: 5px auto; /* 이미지 가운데 정렬 */
-    }
 }

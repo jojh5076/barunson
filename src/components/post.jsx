@@ -10,7 +10,6 @@ function post(){
                     </div>
                     <div className={styles.contents}>
                         <div className={styles.main_case}>
-
                             <div className={styles.item}>
                                 <div className={styles.img_box}>
                                     <a href="https://www.barunsoncard.com/event/curation_ranking.asp?acec=00089D"
